@@ -11,7 +11,7 @@ const Index = () => {
       <section 
         className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden"
         style={{
-          backgroundImage: `url(${heroBackground})`,
+          backgroundImage: `url(/lovable-uploads/cf0f19d0-0ae9-4af7-a896-3dc54c2c8aa6.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundBlendMode: 'overlay'
