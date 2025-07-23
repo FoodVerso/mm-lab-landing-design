@@ -116,9 +116,9 @@ const Index = () => {
             <Card className="bg-card border-mm-red/20 hover:border-mm-red hover:shadow-red-glow transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Package className="h-16 w-16 text-mm-red mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4 text-mm-red">Logística Otimizada</h3>
+                <h3 className="text-2xl font-bold mb-4 text-mm-red">Otimização de cozinha</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Organize sua operação para múltiplas marcas.
+                  Explore novos nichos usando a mesma cozinha.
                 </p>
               </CardContent>
             </Card>
@@ -250,13 +250,6 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg mb-2 text-mm-green">Bônus – Grupo exclusivo no WhatsApp</h3>
-                <p className="text-muted-foreground">Suporte direto e networking com outros donos de restaurantes.</p>
-              </div>
-            </div>
 
             <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
               <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
@@ -286,7 +279,7 @@ const Index = () => {
                 </div>
                 
                 <div className="mb-8">
-                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 997</div>
+                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 197</div>
                   <div className="text-xl text-muted-foreground mb-4">ou 12x de R$ 97,00</div>
                   <p className="text-muted-foreground">Acesso vitalício + atualizações grátis</p>
                 </div>
@@ -297,7 +290,7 @@ const Index = () => {
 
                 <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                   <CheckCircle className="h-4 w-4 text-mm-green" />
-                  Garantia de 30 dias
+                  Garantia de 7 dias
                 </div>
               </CardContent>
             </Card>
