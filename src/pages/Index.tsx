@@ -9,16 +9,9 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground font-inter">
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden"
-        style={{
-          backgroundImage: `url(/lovable-uploads/cf0f19d0-0ae9-4af7-a896-3dc54c2c8aa6.png)`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundBlendMode: 'overlay'
-        }}
+        className="relative min-h-screen flex items-center justify-center bg-mm-dark-gray overflow-hidden"
       >
-        <div className="absolute inset-0 bg-mm-black/70"></div>
+        <div className="absolute inset-0 bg-mm-black/30"></div>
         
         {/* Tech Background Elements */}
         <div className="absolute inset-0 opacity-20">
@@ -37,11 +30,11 @@ const Index = () => {
               <img src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png" alt="MM LAB" className="h-24 md:h-32 w-auto mx-auto" />
             </div>
             
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
-              Transforme sua cozinha em uma máquina de lucro com o método Multimarcas
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+              Transforme sua cozinha em uma <span className="text-mm-green">máquina de lucro</span> com o método Multimarcas
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-4xl mx-auto">
               O curso que já ajudou donos de restaurantes a dobrarem e até triplicarem o faturamento sem abrir novas lojas.
             </p>
             
@@ -297,12 +290,22 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-mixed bg-clip-text text-transparent">
-            Pronto Para Escalar Seu Restaurante?
+      <section 
+        className="py-20 bg-gradient-hero overflow-hidden relative"
+        style={{
+          backgroundImage: `url(/lovable-uploads/cf0f19d0-0ae9-4af7-a896-3dc54c2c8aa6.png)`,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundBlendMode: 'overlay'
+        }}
+      >
+        <div className="absolute inset-0 bg-mm-black/70"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            Pronto Para <span className="text-mm-green">Escalar Seu Restaurante</span>?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Garanta sua vaga e faça sua cozinha trabalhar 100% do tempo.
           </p>
           <Button variant="cta-large" className="text-xl px-12 py-6 shadow-green-glow hover:shadow-red-glow">
