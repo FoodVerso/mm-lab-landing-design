@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChefHat, DollarSign, Lightbulb, Package, Rocket, TrendingUp, Users, Star, CheckCircle, Play, Instagram, MessageCircle, Youtube } from "lucide-react";
-import mmLabLogo from "@/assets/mm-lab-logo.png";
 import heroBackground from "@/assets/hero-background.jpg";
 import chefKitchen from "@/assets/chef-multibrand-kitchen.jpg";
 
@@ -21,7 +20,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-mm-black/70"></div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="mb-8">
-            <img src={mmLabLogo} alt="MM LAB" className="mx-auto h-24 w-auto mb-8" />
+            <img src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png" alt="MM LAB" className="mx-auto h-32 w-auto mb-8" />
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
@@ -279,7 +278,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div>
-              <img src={mmLabLogo} alt="MM LAB" className="h-16 w-auto mb-6" />
+              <img src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png" alt="MM LAB" className="h-20 w-auto mb-6" />
               <p className="text-muted-foreground leading-relaxed">
                 MM LAB é uma metodologia criada por William Flores para donos de restaurantes que querem sair do operacional e multiplicar o faturamento.
               </p>
