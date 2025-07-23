@@ -74,7 +74,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/b07bc6f2-f3ce-4050-a7c7-2db37f5fcd32.png" 
                   alt="William Flores - Criador do MM LAB" 
-                  className="w-80 h-80 object-cover rounded-xl shadow-lg"
+                  className="w-80 h-80 object-contain rounded-xl shadow-lg"
                 />
                 
                 {/* Name Tag */}
