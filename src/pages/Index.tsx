@@ -52,7 +52,7 @@ const Index = () => {
       </section>
 
       {/* William Flores Introduction Section */}
-      <section className="py-20 bg-mm-dark-gray">
+      <section className="py-20 bg-gradient-to-b from-mm-dark-gray to-mm-black/80">
         <div className="container mx-auto px-4">
           <div className="flex justify-center">
             <div className="relative">
@@ -82,7 +82,7 @@ const Index = () => {
       </section>
 
       {/* Course Details Section */}
-      <section className="py-20 bg-mm-dark-gray">
+      <section className="py-20 bg-gradient-to-b from-mm-black/80 to-mm-dark-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-mixed bg-clip-text text-transparent">
@@ -136,7 +136,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gradient-to-b from-mm-dark-gray to-mm-black/90">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
@@ -200,7 +200,7 @@ const Index = () => {
       </section>
 
       {/* What's Inside Section */}
-      <section className="py-20 bg-mm-dark-gray">
+      <section className="py-20 bg-gradient-to-b from-mm-black/90 to-mm-dark-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
@@ -254,7 +254,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-gradient-to-b from-mm-dark-gray to-mm-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
