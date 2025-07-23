@@ -165,7 +165,16 @@ const Index = () => {
             </Card>
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              
+              <CardContent className="p-6">
+                <img 
+                  src="/lovable-uploads/1a6fcfd7-2916-4517-bf76-f0e112845dc8.png" 
+                  alt="Will The Burguer - Dashboard de vendas com 3 lojas" 
+                  className="w-full h-auto rounded-lg mb-4 shadow-lg"
+                />
+                <p className="text-center text-muted-foreground font-medium">
+                  Criei 3 lojas dentro da mesma cozinha, resultado de 30 dias apenas no iFood
+                </p>
+              </CardContent>
             </Card>
           </div>
         </div>
