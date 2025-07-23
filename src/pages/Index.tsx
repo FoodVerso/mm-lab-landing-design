@@ -170,7 +170,7 @@ const Index = () => {
                   <img 
                     src="/lovable-uploads/1a6fcfd7-2916-4517-bf76-f0e112845dc8.png" 
                     alt="Will The Burguer - Dashboard de vendas com 3 lojas" 
-                    className="w-full h-auto rounded-lg mb-4 md:mb-6 shadow-2xl border border-mm-green/30 animate-pulse"
+                    className="w-full h-auto rounded-lg mb-4 md:mb-6 shadow-2xl border border-mm-green/30"
                   />
                   <p className="text-center text-muted-foreground font-bold text-base md:text-lg bg-gradient-mixed bg-clip-text text-transparent">
                     ⭐ Criei 3 lojas dentro da mesma cozinha, resultado de 30 dias apenas no iFood ⭐
