@@ -184,8 +184,8 @@ const Index = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
-            {/* Central Flywheel Design */}
-            <div className="relative flex-1 flex justify-center">
+            {/* Central Flywheel Design - Centered on desktop */}
+            <div className="relative w-full lg:w-auto flex justify-center">
               {/* Outer Energy Ring */}
               <div className="relative w-[500px] h-[500px]">
                 {/* Spinning Energy Ring */}
