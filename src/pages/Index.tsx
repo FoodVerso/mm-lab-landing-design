@@ -290,18 +290,8 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section 
-        className="py-20 bg-gradient-hero overflow-hidden relative"
-        style={{
-          backgroundImage: `url(/lovable-uploads/cf0f19d0-0ae9-4af7-a896-3dc54c2c8aa6.png)`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundBlendMode: 'overlay'
-        }}
-      >
-        <div className="absolute inset-0 bg-mm-black/70"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+      <section className="py-20 bg-gradient-hero">
+        <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Pronto Para <span className="text-mm-green">Escalar Seu Restaurante</span>?
           </h2>
