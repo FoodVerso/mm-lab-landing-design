@@ -38,13 +38,9 @@ const Index = () => {
               O curso que já ajudou donos de restaurantes a dobrarem e até triplicarem o faturamento sem abrir novas lojas.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button variant="cta-large" size="lg" className="text-lg px-10 py-5">
                 Garanta Sua Vaga
-              </Button>
-              <Button variant="red-outline" size="lg" className="flex items-center gap-2">
-                <Play className="h-5 w-5" />
-                Assista ao vídeo
               </Button>
             </div>
           </div>
@@ -270,8 +266,11 @@ const Index = () => {
                 </div>
                 
                 <div className="mb-8">
-                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 197</div>
-                  <div className="text-xl text-muted-foreground mb-4">ou 12x de R$ 97,00</div>
+                  <div className="text-xl text-muted-foreground mb-2">
+                    <span className="line-through">R$ 194,00</span>
+                  </div>
+                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 97</div>
+                  <div className="text-xl text-mm-red font-bold mb-4">50% OFF</div>
                   <p className="text-muted-foreground">Acesso vitalício + atualizações grátis</p>
                 </div>
 
