@@ -531,8 +531,8 @@ const Index = () => {
             <div>
               <h3 className="font-bold text-lg mb-4 text-mm-green">Links</h3>
               <ul className="space-y-2 text-muted-foreground">
-                <li><a href="#" className="hover:text-mm-green transition-colors">Sobre</a></li>
-                <li><a href="#" className="hover:text-mm-green transition-colors">Contato</a></li>
+                
+                
                 <li><a href="#" className="hover:text-mm-green transition-colors">Política de Privacidade</a></li>
               </ul>
             </div>
@@ -554,7 +554,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-mm-green/20 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 MM LAB. Todos os direitos reservados.</p>
+            <p>© 2025 MM LAB. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
