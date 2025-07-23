@@ -126,8 +126,8 @@ const Index = () => {
 
           <div className="flex justify-center">
             <img 
-              src={chefKitchen} 
-              alt="Chef trabalhando com múltiplas marcas" 
+              src="/lovable-uploads/caf4f0b2-58a7-4ca9-ae2f-02031c3bd018.png" 
+              alt="Evento MM LAB - Cozinhas Multimarcas" 
               className="rounded-lg shadow-card-mm max-w-4xl w-full"
             />
           </div>
