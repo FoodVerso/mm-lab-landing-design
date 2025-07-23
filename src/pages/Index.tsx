@@ -188,7 +188,7 @@ const Index = () => {
             {/* Central Flywheel Design - Centered on desktop */}
             <div className="relative w-full lg:w-auto flex justify-center">
               {/* Outer Energy Ring */}
-              <div className="relative w-[500px] h-[500px]">
+              <div className="relative w-[320px] h-[320px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]">
                 {/* Spinning Energy Ring */}
                 <div className="absolute inset-0 rounded-full border-4 border-emerald-400/30 animate-spin" style={{
                 animationDuration: '10s'
@@ -205,49 +205,49 @@ const Index = () => {
               }}></div>
 
                 {/* Center Core - MM LAB */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-black border-4 border-emerald-400 rounded-full shadow-lg flex items-center justify-center z-10">
-                  <img src="/lovable-uploads/e2a75c12-5c2c-49b5-9bd7-ead33299042c.png" alt="MM LAB Logo" className="w-20 h-20 object-contain" />
-                  <div className="absolute inset-0 rounded-full bg-emerald-400/20 animate-ping mx-[3px] my-[2px]"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 bg-black border-2 md:border-3 lg:border-4 border-emerald-400 rounded-full shadow-lg flex items-center justify-center z-10">
+                  <img src="/lovable-uploads/e2a75c12-5c2c-49b5-9bd7-ead33299042c.png" alt="MM LAB Logo" className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain" />
+                  <div className="absolute inset-0 rounded-full bg-emerald-400/20 animate-ping mx-[2px] my-[2px] md:mx-[3px] md:my-[2px]"></div>
                 </div>
 
-                {/* Module Segments - Better positioned in a perfect circle */}
+                {/* Module Segments - Responsive sizes and positions */}
                 {/* Módulo 1 - Top (12 o'clock) */}
-                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
-                  <div className="p-4 text-center h-full flex flex-col justify-center">
-                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 1</div>
-                    <div className="text-xs text-gray-300 leading-tight">CONCEITO<br />MULTI-MARCAS</div>
+                <div className="absolute top-2 md:top-4 lg:top-8 left-1/2 transform -translate-x-1/2 w-24 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-2 md:p-3 lg:p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-xs md:text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 1</div>
+                    <div className="text-[10px] md:text-xs text-gray-300 leading-tight">CONCEITO<br />MULTI-MARCAS</div>
                   </div>
                 </div>
 
                 {/* Módulo 2 - Right (3 o'clock) */}
-                <div className="absolute top-1/2 right-8 transform -translate-y-1/2 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
-                  <div className="p-4 text-center h-full flex flex-col justify-center">
-                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 2</div>
-                    <div className="text-xs text-gray-300 leading-tight">CONTABILIDADE<br />INTELIGENTE</div>
+                <div className="absolute top-1/2 right-2 md:right-4 lg:right-8 transform -translate-y-1/2 w-24 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-2 md:p-3 lg:p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-xs md:text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 2</div>
+                    <div className="text-[10px] md:text-xs text-gray-300 leading-tight">CONTABILIDADE<br />INTELIGENTE</div>
                   </div>
                 </div>
 
                 {/* Módulo 3 - Bottom Right (4:30 o'clock) */}
-                <div className="absolute bottom-8 right-24 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
-                  <div className="p-4 text-center h-full flex flex-col justify-center">
-                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 3</div>
-                    <div className="text-xs text-gray-300 leading-tight">SISTEMAS E<br />FERRAMENTAS</div>
+                <div className="absolute bottom-2 md:bottom-4 lg:bottom-8 right-8 md:right-16 lg:right-24 w-24 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-2 md:p-3 lg:p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-xs md:text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 3</div>
+                    <div className="text-[10px] md:text-xs text-gray-300 leading-tight">SISTEMAS E<br />FERRAMENTAS</div>
                   </div>
                 </div>
 
                 {/* Módulo 4 - Bottom Left (7:30 o'clock) */}
-                <div className="absolute bottom-8 left-24 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
-                  <div className="p-4 text-center h-full flex flex-col justify-center">
-                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 4</div>
-                    <div className="text-xs text-gray-300 leading-tight">VENDAS<br />MULTI-MARCAS</div>
+                <div className="absolute bottom-2 md:bottom-4 lg:bottom-8 left-8 md:left-16 lg:left-24 w-24 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-2 md:p-3 lg:p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-xs md:text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 4</div>
+                    <div className="text-[10px] md:text-xs text-gray-300 leading-tight">VENDAS<br />MULTI-MARCAS</div>
                   </div>
                 </div>
 
                 {/* Módulo Bônus - Left (9 o'clock) */}
-                <div className="absolute top-1/2 left-8 transform -translate-y-1/2 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
-                  <div className="p-4 text-center h-full flex flex-col justify-center">
-                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">BÔNUS</div>
-                    <div className="text-xs text-gray-300 leading-tight">MÓDULO<br />EXTRA</div>
+                <div className="absolute top-1/2 left-2 md:left-4 lg:left-8 transform -translate-y-1/2 w-24 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-2 md:p-3 lg:p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-xs md:text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">BÔNUS</div>
+                    <div className="text-[10px] md:text-xs text-gray-300 leading-tight">MÓDULO<br />EXTRA</div>
                   </div>
                 </div>
 
