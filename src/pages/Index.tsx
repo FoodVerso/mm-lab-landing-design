@@ -27,7 +27,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center">
             <div className="mb-8">
-              <img src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png" alt="MM LAB" className="h-24 md:h-32 w-auto mx-auto" />
+              <img src="/lovable-uploads/e2a75c12-5c2c-49b5-9bd7-ead33299042c.png" alt="MM LAB" className="h-24 md:h-32 w-auto mx-auto" />
             </div>
             
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
@@ -225,10 +225,11 @@ const Index = () => {
 
                 {/* Center Core - MM LAB */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-black border-4 border-emerald-400 rounded-full shadow-lg flex items-center justify-center z-10">
-                  <div className="text-center">
-                    <ChefHat className="h-10 w-10 text-emerald-400 mx-auto mb-2" />
-                    <div className="text-emerald-400 font-bold text-lg">MM LAB</div>
-                  </div>
+                  <img 
+                    src="/lovable-uploads/e2a75c12-5c2c-49b5-9bd7-ead33299042c.png"
+                    alt="MM LAB Logo"
+                    className="w-20 h-20 object-contain"
+                  />
                   <div className="absolute inset-0 rounded-full bg-emerald-400/20 animate-ping"></div>
                 </div>
 
