@@ -61,7 +61,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// MM LAB Custom Colors
+				'mm-green': 'hsl(var(--mm-green))',
+				'mm-green-secondary': 'hsl(var(--mm-green-secondary))',
+				'mm-green-light': 'hsl(var(--mm-green-light))',
+				'mm-black': 'hsl(var(--mm-black))',
+				'mm-dark-gray': 'hsl(var(--mm-dark-gray))'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-cta': 'var(--gradient-cta)'
+			},
+			boxShadow: {
+				'green-glow': 'var(--shadow-green-glow)',
+				'card-mm': 'var(--shadow-card)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

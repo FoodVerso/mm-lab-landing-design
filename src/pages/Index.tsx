@@ -1,12 +1,320 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ChefHat, DollarSign, Lightbulb, Package, Rocket, TrendingUp, Users, Star, CheckCircle, Play, Instagram, MessageCircle, Youtube } from "lucide-react";
+import mmLabLogo from "@/assets/mm-lab-logo.png";
+import heroBackground from "@/assets/hero-background.jpg";
+import chefKitchen from "@/assets/chef-multibrand-kitchen.jpg";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground font-inter">
+      {/* Hero Section */}
+      <section 
+        className="relative min-h-screen flex items-center justify-center bg-gradient-hero"
+        style={{
+          backgroundImage: `url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay'
+        }}
+      >
+        <div className="absolute inset-0 bg-mm-black/70"></div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <div className="mb-8">
+            <img src={mmLabLogo} alt="MM LAB" className="mx-auto h-24 w-auto mb-8" />
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+            Transforme sua cozinha em uma máquina de lucro com o método Multimarcas
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+            O curso que já ajudou donos de restaurantes a dobrarem e até triplicarem o faturamento sem abrir novas lojas.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button variant="cta-large" size="lg" className="text-xl px-12 py-6">
+              Garanta Sua Vaga
+            </Button>
+            <Button variant="secondary-outline" size="lg" className="flex items-center gap-2">
+              <Play className="h-5 w-5" />
+              Assista ao vídeo de apresentação
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Course Details Section */}
+      <section className="py-20 bg-mm-dark-gray">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
+              O Que é o MM LAB?
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Aprenda a operar múltiplas marcas na mesma cozinha e escalar seu faturamento usando o método que revolucionou o delivery no Brasil.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <Rocket className="h-16 w-16 text-mm-green mx-auto mb-6" />
+                <h3 className="text-2xl font-bold mb-4 text-mm-green">Escalabilidade</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Venda mais sem novos custos fixos.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <Package className="h-16 w-16 text-mm-green mx-auto mb-6" />
+                <h3 className="text-2xl font-bold mb-4 text-mm-green">Logística Otimizada</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Organize sua operação para múltiplas marcas.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <Lightbulb className="h-16 w-16 text-mm-green mx-auto mb-6" />
+                <h3 className="text-2xl font-bold mb-4 text-mm-green">Estratégia Completa</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Do conceito à execução, passo a passo.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="flex justify-center">
+            <img 
+              src={chefKitchen} 
+              alt="Chef trabalhando com múltiplas marcas" 
+              className="rounded-lg shadow-card-mm max-w-4xl w-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
+              Resultados Reais
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-mm-green fill-current" />
+                  ))}
+                </div>
+                <p className="text-foreground mb-6 italic leading-relaxed">
+                  "Com o MM LAB faturei 30k a mais em 1 mês com as mesmas pessoas e cozinha."
+                </p>
+                <div className="border-t border-mm-green/20 pt-4">
+                  <p className="font-semibold text-mm-green">João Silva</p>
+                  <p className="text-muted-foreground text-sm">Dono de hamburgueria</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-mm-green fill-current" />
+                  ))}
+                </div>
+                <p className="text-foreground mb-6 italic leading-relaxed">
+                  "Achei que era impossível até ver o método em ação."
+                </p>
+                <div className="border-t border-mm-green/20 pt-4">
+                  <p className="font-semibold text-mm-green">Maria Souza</p>
+                  <p className="text-muted-foreground text-sm">Delivery de comida brasileira</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-mm-green fill-current" />
+                  ))}
+                </div>
+                <p className="text-foreground mb-6 italic leading-relaxed">
+                  "Triplicamos o faturamento em 6 meses sem contratar ninguém novo."
+                </p>
+                <div className="border-t border-mm-green/20 pt-4">
+                  <p className="font-semibold text-mm-green">Carlos Pereira</p>
+                  <p className="text-muted-foreground text-sm">Proprietário de pizzaria</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* What's Inside Section */}
+      <section className="py-20 bg-mm-dark-gray">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
+              O Que Você Vai Aprender
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 1 – Conceito de Multi-Marcas</h3>
+                <p className="text-muted-foreground">Entenda a estratégia por trás do método que revoluciona restaurantes.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 2 – Contabilidade Inteligente</h3>
+                <p className="text-muted-foreground">Organize suas finanças para múltiplas marcas de forma eficiente.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 3 – Sistemas e Ferramentas</h3>
+                <p className="text-muted-foreground">As melhores ferramentas para automatizar sua operação.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 4 – Vendas e Escala</h3>
+                <p className="text-muted-foreground">Estratégias para maximizar vendas em cada marca.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-lg mb-2 text-mm-green">Bônus – Grupo exclusivo no WhatsApp</h3>
+                <p className="text-muted-foreground">Suporte direto e networking com outros donos de restaurantes.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
+              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-lg mb-2 text-mm-green">Acesso Vitalício</h3>
+                <p className="text-muted-foreground">Conteúdo sempre disponível com atualizações gratuitas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
+              Invista no seu Restaurante
+            </h2>
+          </div>
+
+          <div className="max-w-lg mx-auto">
+            <Card className="bg-card border-2 border-mm-green shadow-green-glow">
+              <CardContent className="p-12 text-center">
+                <div className="bg-mm-green text-mm-black px-4 py-2 rounded-full text-sm font-bold mb-8 inline-block">
+                  Lote Promocional – Últimas Vagas
+                </div>
+                
+                <div className="mb-8">
+                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 997</div>
+                  <div className="text-xl text-muted-foreground mb-4">ou 12x de R$ 97,00</div>
+                  <p className="text-muted-foreground">Acesso vitalício + atualizações grátis</p>
+                </div>
+
+                <Button variant="cta-large" className="w-full text-xl py-6 mb-6">
+                  Quero Garantir Minha Vaga
+                </Button>
+
+                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                  <CheckCircle className="h-4 w-4 text-mm-green" />
+                  Garantia de 30 dias
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-20 bg-gradient-hero">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
+            Pronto Para Escalar Seu Restaurante?
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Garanta sua vaga e faça sua cozinha trabalhar 100% do tempo.
+          </p>
+          <Button variant="cta-large" className="text-xl px-12 py-6 shadow-green-glow">
+            Garanta Sua Vaga Agora
+          </Button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-mm-black py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div>
+              <img src={mmLabLogo} alt="MM LAB" className="h-16 w-auto mb-6" />
+              <p className="text-muted-foreground leading-relaxed">
+                MM LAB é uma metodologia criada por William Flores para donos de restaurantes que querem sair do operacional e multiplicar o faturamento.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-mm-green">Links</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li><a href="#" className="hover:text-mm-green transition-colors">Sobre</a></li>
+                <li><a href="#" className="hover:text-mm-green transition-colors">Contato</a></li>
+                <li><a href="#" className="hover:text-mm-green transition-colors">Política de Privacidade</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg mb-4 text-mm-green">Redes Sociais</h3>
+              <div className="flex gap-4">
+                <a href="#" className="text-muted-foreground hover:text-mm-green transition-colors">
+                  <Instagram className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-mm-green transition-colors">
+                  <MessageCircle className="h-6 w-6" />
+                </a>
+                <a href="#" className="text-muted-foreground hover:text-mm-green transition-colors">
+                  <Youtube className="h-6 w-6" />
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-mm-green/20 pt-8 text-center text-muted-foreground">
+            <p>&copy; 2024 MM LAB. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
