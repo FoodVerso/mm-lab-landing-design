@@ -137,7 +137,7 @@ const Index = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid gap-8">
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
               <CardContent className="p-6">
                 <img 
@@ -164,15 +164,15 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300 lg:col-span-3 transform hover:scale-105 shadow-green-glow hover:shadow-lg">
-              <CardContent className="p-8">
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300 transform hover:scale-105 shadow-green-glow hover:shadow-lg w-full">
+              <CardContent className="p-4 md:p-8">
                 <div className="max-w-2xl mx-auto">
                   <img 
                     src="/lovable-uploads/1a6fcfd7-2916-4517-bf76-f0e112845dc8.png" 
                     alt="Will The Burguer - Dashboard de vendas com 3 lojas" 
-                    className="w-full h-auto rounded-lg mb-6 shadow-2xl border border-mm-green/30 animate-pulse"
+                    className="w-full h-auto rounded-lg mb-4 md:mb-6 shadow-2xl border border-mm-green/30 animate-pulse"
                   />
-                  <p className="text-center text-muted-foreground font-bold text-lg bg-gradient-mixed bg-clip-text text-transparent">
+                  <p className="text-center text-muted-foreground font-bold text-base md:text-lg bg-gradient-mixed bg-clip-text text-transparent">
                     ⭐ Criei 3 lojas dentro da mesma cozinha, resultado de 30 dias apenas no iFood ⭐
                   </p>
                 </div>
