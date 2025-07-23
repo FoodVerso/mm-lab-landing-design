@@ -12,8 +12,9 @@ const Index = () => {
         className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden"
         style={{
           backgroundImage: `url(/lovable-uploads/cf0f19d0-0ae9-4af7-a896-3dc54c2c8aa6.png)`,
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
           backgroundBlendMode: 'overlay'
         }}
       >
@@ -31,58 +32,55 @@ const Index = () => {
         </div>
 
         <div className="relative z-10 container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Content Side */}
-            <div className="text-center lg:text-left">
-              <div className="mb-8 lg:hidden flex justify-center">
-                <img src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png" alt="MM LAB" className="h-24 w-auto" />
-              </div>
-              
-              <div className="hidden lg:block mb-8">
-                <img src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png" alt="MM LAB" className="h-32 w-auto" />
-              </div>
-              
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
-                Transforme sua cozinha em uma máquina de lucro com o método Multimarcas
-              </h1>
-              
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                O curso que já ajudou donos de restaurantes a dobrarem e até triplicarem o faturamento sem abrir novas lojas.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button variant="cta-large" size="lg" className="text-lg px-10 py-5">
-                  Garanta Sua Vaga
-                </Button>
-                <Button variant="red-outline" size="lg" className="flex items-center gap-2">
-                  <Play className="h-5 w-5" />
-                  Assista ao vídeo
-                </Button>
-              </div>
+          <div className="text-center">
+            <div className="mb-8">
+              <img src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png" alt="MM LAB" className="h-24 md:h-32 w-auto mx-auto" />
             </div>
+            
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+              Transforme sua cozinha em uma máquina de lucro com o método Multimarcas
+            </h1>
+            
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
+              O curso que já ajudou donos de restaurantes a dobrarem e até triplicarem o faturamento sem abrir novas lojas.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="cta-large" size="lg" className="text-lg px-10 py-5">
+                Garanta Sua Vaga
+              </Button>
+              <Button variant="red-outline" size="lg" className="flex items-center gap-2">
+                <Play className="h-5 w-5" />
+                Assista ao vídeo
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Photo Side */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                {/* Tech Elements Around Photo */}
-                <div className="absolute -top-4 -left-4 w-8 h-8 border-2 border-mm-green rounded border-dashed animate-spin"></div>
-                <div className="absolute -top-2 -right-6 w-6 h-6 border-2 border-mm-red rounded-full animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-6 w-10 h-6 border border-mm-green/50 rounded"></div>
-                <div className="absolute -bottom-2 -right-4 w-6 h-10 border border-mm-red/50 rounded"></div>
+      {/* William Flores Introduction Section */}
+      <section className="py-20 bg-mm-dark-gray">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center">
+            <div className="relative">
+              {/* Tech Elements Around Photo */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 border-2 border-mm-green rounded border-dashed animate-spin"></div>
+              <div className="absolute -top-2 -right-6 w-6 h-6 border-2 border-mm-red rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-6 w-10 h-6 border border-mm-green/50 rounded"></div>
+              <div className="absolute -bottom-2 -right-4 w-6 h-10 border border-mm-red/50 rounded"></div>
+              
+              {/* Main Photo Container */}
+              <div className="relative p-4 bg-gradient-to-br from-mm-green/10 to-mm-red/10 rounded-2xl backdrop-blur-sm border border-mm-green/20 shadow-green-glow">
+                <img 
+                  src="/lovable-uploads/cf0dfec6-f3b7-4f18-be27-4180aaf70486.png" 
+                  alt="William Flores - Criador do MM LAB" 
+                  className="w-80 h-80 object-cover rounded-xl shadow-lg"
+                />
                 
-                {/* Main Photo Container */}
-                <div className="relative p-4 bg-gradient-to-br from-mm-green/10 to-mm-red/10 rounded-2xl backdrop-blur-sm border border-mm-green/20 shadow-green-glow">
-                  <img 
-                    src="/lovable-uploads/cf0dfec6-f3b7-4f18-be27-4180aaf70486.png" 
-                    alt="William Flores - Criador do MM LAB" 
-                    className="w-80 h-80 object-cover rounded-xl shadow-lg"
-                  />
-                  
-                  {/* Name Tag */}
-                  <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-mm-black/90 backdrop-blur-sm px-6 py-3 rounded-full border border-mm-green/30">
-                    <p className="text-mm-green font-bold text-lg">William Flores</p>
-                    <p className="text-muted-foreground text-sm text-center">Criador do MM LAB</p>
-                  </div>
+                {/* Name Tag */}
+                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-mm-black/90 backdrop-blur-sm px-6 py-3 rounded-full border border-mm-green/30">
+                  <p className="text-mm-green font-bold text-lg">William Flores</p>
+                  <p className="text-muted-foreground text-sm text-center">Criador do MM LAB</p>
                 </div>
               </div>
             </div>
