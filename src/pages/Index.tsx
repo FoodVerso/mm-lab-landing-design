@@ -210,106 +210,113 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
-            {/* Central Circular Design */}
-            <div className="relative">
-              {/* Outer Energy Rings */}
-              <div className="absolute inset-0 w-96 h-96">
-                <div className="absolute inset-0 rounded-full border-2 border-emerald-400/30 animate-spin" style={{animationDuration: '8s'}}></div>
-                <div className="absolute inset-4 rounded-full border border-emerald-400/20 animate-spin" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
-                <div className="absolute inset-8 rounded-full border border-emerald-400/10 animate-spin" style={{animationDuration: '10s'}}></div>
-              </div>
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
+            {/* Central Flywheel Design */}
+            <div className="relative flex-1">
+              {/* Outer Energy Ring */}
+              <div className="relative w-[500px] h-[500px] mx-auto">
+                {/* Spinning Energy Ring */}
+                <div className="absolute inset-0 rounded-full border-4 border-emerald-400/30 animate-spin" style={{animationDuration: '10s'}}></div>
+                <div className="absolute inset-4 rounded-full border-2 border-emerald-400/20 animate-spin" style={{animationDuration: '8s', animationDirection: 'reverse'}}></div>
+                
+                {/* Glow Effects */}
+                <div className="absolute inset-0 rounded-full bg-emerald-400/5 blur-2xl animate-pulse"></div>
+                <div className="absolute inset-8 rounded-full bg-emerald-400/10 blur-xl animate-pulse" style={{animationDelay: '1s'}}></div>
 
-              {/* Neon Glow Effect */}
-              <div className="absolute inset-0 w-96 h-96 rounded-full bg-emerald-400/5 blur-xl animate-pulse"></div>
-              <div className="absolute inset-12 w-72 h-72 rounded-full bg-emerald-400/10 blur-lg animate-pulse" style={{animationDelay: '1s'}}></div>
-
-              {/* Main Circle Container */}
-              <div className="relative w-80 h-80 mx-auto">
                 {/* Center Core - MM LAB */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-black border-2 border-emerald-400 rounded-full shadow-lg flex items-center justify-center">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-black border-4 border-emerald-400 rounded-full shadow-lg flex items-center justify-center z-10">
                   <div className="text-center">
-                    <div className="text-emerald-400 font-bold text-sm">MM LAB</div>
+                    <ChefHat className="h-10 w-10 text-emerald-400 mx-auto mb-2" />
+                    <div className="text-emerald-400 font-bold text-lg">MM LAB</div>
                   </div>
                   <div className="absolute inset-0 rounded-full bg-emerald-400/20 animate-ping"></div>
                 </div>
 
-                {/* Module Segments */}
-                {/* Módulo 1 - Top */}
-                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
-                  <div className="p-3 text-center">
-                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 1</div>
-                    <div className="text-[10px] text-gray-300 leading-tight">CONCEITO</div>
+                {/* Module Segments - Better positioned in a perfect circle */}
+                {/* Módulo 1 - Top (12 o'clock) */}
+                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 1</div>
+                    <div className="text-xs text-gray-300 leading-tight">CONCEITO<br/>MULTI-MARCAS</div>
                   </div>
                 </div>
 
-                {/* Módulo 2 - Top Right */}
-                <div className="absolute top-16 right-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
-                  <div className="p-3 text-center">
-                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 2</div>
-                    <div className="text-[10px] text-gray-300 leading-tight">CONTABILIDADE</div>
+                {/* Módulo 2 - Right (3 o'clock) */}
+                <div className="absolute top-1/2 right-8 transform -translate-y-1/2 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 2</div>
+                    <div className="text-xs text-gray-300 leading-tight">CONTABILIDADE<br/>INTELIGENTE</div>
                   </div>
                 </div>
 
-                {/* Módulo 3 - Bottom Right */}
-                <div className="absolute bottom-16 right-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
-                  <div className="p-3 text-center">
-                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 3</div>
-                    <div className="text-[10px] text-gray-300 leading-tight">SISTEMAS</div>
+                {/* Módulo 3 - Bottom Right (5 o'clock) */}
+                <div className="absolute bottom-16 right-20 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 3</div>
+                    <div className="text-xs text-gray-300 leading-tight">SISTEMAS E<br/>FERRAMENTAS</div>
                   </div>
                 </div>
 
-                {/* Módulo 4 - Bottom Left */}
-                <div className="absolute bottom-16 left-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
-                  <div className="p-3 text-center">
-                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 4</div>
-                    <div className="text-[10px] text-gray-300 leading-tight">VENDAS</div>
+                {/* Módulo 4 - Bottom Left (7 o'clock) */}
+                <div className="absolute bottom-16 left-20 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 4</div>
+                    <div className="text-xs text-gray-300 leading-tight">VENDAS<br/>MULTI-MARCAS</div>
                   </div>
                 </div>
 
-                {/* Módulo Bônus - Top Left */}
-                <div className="absolute top-16 left-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
-                  <div className="p-3 text-center">
-                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">BÔNUS</div>
-                    <div className="text-[10px] text-gray-300 leading-tight">EXTRA</div>
+                {/* Módulo Bônus - Top Left (10 o'clock) */}
+                <div className="absolute top-16 left-20 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                  <div className="p-4 text-center h-full flex flex-col justify-center">
+                    <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">BÔNUS</div>
+                    <div className="text-xs text-gray-300 leading-tight">MÓDULO<br/>EXTRA</div>
                   </div>
                 </div>
 
-                {/* Energy Lines */}
+                {/* Energy Connections - Improved lines */}
                 <div className="absolute inset-0 pointer-events-none">
-                  <div className="absolute top-24 left-1/2 w-px h-16 bg-gradient-to-b from-emerald-400/60 to-transparent animate-pulse"></div>
-                  <div className="absolute top-1/2 right-24 h-px w-16 bg-gradient-to-r from-emerald-400/60 to-transparent animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                  <div className="absolute bottom-24 left-1/2 w-px h-16 bg-gradient-to-t from-emerald-400/60 to-transparent animate-pulse" style={{animationDelay: '1s'}}></div>
-                  <div className="absolute top-1/2 left-24 h-px w-16 bg-gradient-to-l from-emerald-400/60 to-transparent animate-pulse" style={{animationDelay: '1.5s'}}></div>
-                  <div className="absolute top-32 left-32 w-px h-12 bg-gradient-to-b from-emerald-400/40 to-transparent animate-pulse transform rotate-45" style={{animationDelay: '2s'}}></div>
+                  {/* Lines from center to each module */}
+                  <div className="absolute top-1/2 left-1/2 w-px h-32 bg-gradient-to-t from-emerald-400/60 to-transparent transform -translate-x-1/2 -translate-y-full animate-pulse"></div>
+                  <div className="absolute top-1/2 left-1/2 h-px w-32 bg-gradient-to-r from-emerald-400/60 to-transparent transform -translate-y-1/2 animate-pulse" style={{animationDelay: '1s'}}></div>
+                  <div className="absolute top-1/2 left-1/2 w-px h-24 bg-gradient-to-b from-emerald-400/60 to-transparent transform -translate-x-1/2 translate-y-4 rotate-45 animate-pulse" style={{animationDelay: '2s'}}></div>
+                  <div className="absolute top-1/2 left-1/2 w-px h-24 bg-gradient-to-b from-emerald-400/60 to-transparent transform -translate-x-1/2 translate-y-4 -rotate-45 animate-pulse" style={{animationDelay: '3s'}}></div>
+                  <div className="absolute top-1/2 left-1/2 w-px h-20 bg-gradient-to-t from-emerald-400/60 to-transparent transform -translate-x-1/2 -translate-y-8 -rotate-45 animate-pulse" style={{animationDelay: '4s'}}></div>
                 </div>
               </div>
             </div>
 
-            {/* William Flores Image */}
-            <div className="relative lg:absolute lg:right-10 lg:top-1/2 lg:transform lg:-translate-y-1/2">
+            {/* William Flores Image - Integrated with flywheel */}
+            <div className="relative flex-1 lg:max-w-md">
               <div className="relative">
+                {/* Background glow for image */}
+                <div className="absolute -inset-12 bg-gradient-to-r from-emerald-400/20 to-transparent rounded-full blur-3xl"></div>
+                
+                {/* Main image */}
                 <img 
                   src="/lovable-uploads/2f2aed23-036f-4ec6-9101-67ede809f716.png" 
                   alt="William Flores - Criador do MM LAB" 
-                  className="w-72 h-96 object-contain opacity-80 hover:opacity-100 transition-opacity duration-500"
+                  className="w-full max-w-md h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-500 relative z-10"
                 />
-                <div className="absolute -inset-8 bg-gradient-to-l from-emerald-400/10 to-transparent rounded-xl blur-2xl"></div>
+                
+                {/* Decorative elements around image */}
+                <div className="absolute top-10 right-10 w-3 h-3 bg-emerald-400 rounded-full animate-ping"></div>
+                <div className="absolute bottom-20 left-10 w-2 h-2 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
+                <div className="absolute top-1/3 left-5 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '4s'}}></div>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-20">
+          <div className="text-center mt-16">
             <p className="text-xl text-gray-300 italic max-w-4xl mx-auto leading-relaxed">
               "Em 5 módulos você dominará o método Multi-Marcas para escalar seu restaurante e faturar mais com a mesma cozinha."
             </p>
           </div>
         </div>
 
-        {/* Additional Background Effects */}
-        <div className="absolute top-0 left-1/4 w-2 h-2 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-10 right-1/4 w-1 h-1 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '4s'}}></div>
-        <div className="absolute top-1/3 left-10 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '6s'}}></div>
+        {/* Additional floating particles */}
+        <div className="absolute top-20 left-1/4 w-2 h-2 bg-emerald-400 rounded-full animate-ping opacity-30" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-32 right-1/3 w-1 h-1 bg-emerald-400 rounded-full animate-ping opacity-30" style={{animationDelay: '3s'}}></div>
+        <div className="absolute top-1/2 left-10 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping opacity-30" style={{animationDelay: '5s'}}></div>
       </section>
 
       {/* Pricing Section */}
