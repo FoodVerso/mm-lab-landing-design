@@ -133,10 +133,12 @@ const Index = () => {
             </h2>
           </div>
 
-          <div className="grid gap-8">
+          <div className="grid gap-8 max-w-4xl mx-auto">
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
               <CardContent className="p-6">
-                <img src="/lovable-uploads/af32416f-fd39-4027-999c-5dce6c4b9b04.png" alt="Resultado financeiro do aplicativo iFood" className="w-full h-auto rounded-lg mb-4 shadow-lg" />
+                <div className="max-w-md mx-auto">
+                  <img src="/lovable-uploads/af32416f-fd39-4027-999c-5dce6c4b9b04.png" alt="Resultado financeiro do aplicativo iFood" className="w-full h-auto rounded-lg mb-4 shadow-lg" />
+                </div>
                 <p className="text-center text-muted-foreground font-medium">
                   Marca de comida com 12 dias de abertura
                 </p>
@@ -145,7 +147,9 @@ const Index = () => {
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
               <CardContent className="p-6">
-                <img src="/lovable-uploads/eef31798-8226-4275-8b3d-8a3e23249200.png" alt="Açaiteca - Loja de açaí do aluno Daniel" className="w-full h-auto rounded-lg mb-4 shadow-lg" />
+                <div className="max-w-md mx-auto">
+                  <img src="/lovable-uploads/eef31798-8226-4275-8b3d-8a3e23249200.png" alt="Açaiteca - Loja de açaí do aluno Daniel" className="w-full h-auto rounded-lg mb-4 shadow-lg" />
+                </div>
                 <p className="text-center text-muted-foreground font-medium">
                   Aluno Daniel vendia doces e bolos e após implantar o método criou uma marca de açaí na mesma cozinha
                 </p>
@@ -154,7 +158,7 @@ const Index = () => {
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300 transform hover:scale-105 shadow-green-glow hover:shadow-lg w-full">
               <CardContent className="p-4 md:p-8">
-                <div className="max-w-2xl mx-auto">
+                <div className="max-w-lg mx-auto">
                   <img src="/lovable-uploads/1a6fcfd7-2916-4517-bf76-f0e112845dc8.png" alt="Will The Burguer - Dashboard de vendas com 3 lojas" className="w-full h-auto rounded-lg mb-4 md:mb-6 shadow-2xl border border-mm-green/30" />
                   <p className="text-center text-muted-foreground font-bold text-base md:text-lg bg-gradient-mixed bg-clip-text text-transparent">
                     ⭐ Criei 3 lojas dentro da mesma cozinha, resultado de 30 dias apenas no iFood ⭐
@@ -179,11 +183,11 @@ const Index = () => {
             
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-0">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
             {/* Central Flywheel Design */}
-            <div className="relative flex-1">
+            <div className="relative flex-1 flex justify-center">
               {/* Outer Energy Ring */}
-              <div className="relative w-[500px] h-[500px] mx-auto">
+              <div className="relative w-[500px] h-[500px]">
                 {/* Spinning Energy Ring */}
                 <div className="absolute inset-0 rounded-full border-4 border-emerald-400/30 animate-spin" style={{
                 animationDuration: '10s'
