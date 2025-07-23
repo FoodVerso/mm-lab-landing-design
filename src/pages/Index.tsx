@@ -98,9 +98,9 @@ const Index = () => {
             </Card>
 
             <Card className="bg-card border-mm-red/20 hover:border-mm-red hover:shadow-red-glow transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <Package className="h-16 w-16 text-mm-red mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4 text-mm-red">Otimização de cozinha</h3>
+              <CardContent className="p-8 text-center bg-[#151715]/15">
+                <Package className="h-16 w-16 text-mm-red mx-auto mb-6 bg-[#000c00]/15" />
+                <h3 className="text-2xl font-bold mb-4 text-mm-red text-[#04ff6e]">Otimização de cozinha</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Explore novos nichos usando a mesma cozinha.
                 </p>
@@ -345,9 +345,7 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-b from-mm-black to-mm-dark-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-mixed bg-clip-text text-transparent">
-              ❓ Perguntas Frequentes
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-mixed bg-clip-text text-transparent"> Perguntas Frequentes❓</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Tire suas dúvidas sobre o MM LAB e o método Multi-Marcas
             </p>
@@ -363,9 +361,7 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-3 text-mm-green">🔥 O que é o MM LAB?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      O MM LAB é um curso 100% online onde você aprende o método Multi-Marcas, que permite operar várias marcas de delivery dentro da mesma cozinha, com a mesma equipe e estrutura, aumentando o faturamento sem abrir novas lojas.
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">O MM LAB é um curso 100% online onde você aprende o método Multi-Marcas, que permite operar várias marcas de delivery dentro da mesma cozinha, com o mesmo custo e estrutura, aumentando o faturamento sem abrir novas lojas físicas.</p>
                   </div>
                 </div>
               </CardContent>
@@ -380,9 +376,7 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-3 text-mm-green">📦 Eu preciso ter mais de uma cozinha para aplicar o método?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Não! O método foi desenvolvido para ser aplicado em uma única cozinha. Você usa o mesmo espaço e os mesmos recursos para escalar o delivery com novas marcas.
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">Não! O método foi desenvolvido para ser aplicado também em uma única cozinha. Você usa o mesmo espaço e os mesmos recursos para escalar o delivery com novas marcas.</p>
                   </div>
                 </div>
               </CardContent>
@@ -449,7 +443,7 @@ const Index = () => {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-3 text-mm-green">💰 Qual é o valor do curso e as formas de pagamento?</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      O investimento é de <span className="text-mm-green font-bold">R$997,00 à vista</span> ou <span className="text-mm-green font-bold">12x de R$97,00</span> no cartão. Aceitamos boleto, PIX e cartão de crédito.
+                      O investimento é de <span className="text-mm-green font-bold">R$97,00 à vista</span> ou <span className="text-mm-green font-bold">12x de R$97,00</span> no cartão. Aceitamos boleto, PIX e cartão de crédito.
                     </p>
                   </div>
                 </div>
@@ -465,9 +459,7 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-3 text-mm-green">📝 Terei suporte durante o curso?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Sim! Você terá acesso a um suporte via e-mail e atualizações constantes do conteúdo, para garantir que você não fique com nenhuma dúvida.
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">Sim! Você terá acesso a um suporte via Whatsapp e atualizações constantes do conteúdo, para garantir que você não fique com nenhuma dúvida.</p>
                   </div>
                 </div>
               </CardContent>
@@ -482,9 +474,7 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-3 text-mm-green">🔓 Por quanto tempo terei acesso ao conteúdo?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Acesso vitalício. Você poderá assistir às aulas quantas vezes quiser e terá direito a todas as atualizações futuras.
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">Nesta ofera o Acesso é vitalício. Você poderá assistir às aulas quantas vezes quiser e terá direito a todas as atualizações futuras.</p>
                   </div>
                 </div>
               </CardContent>
@@ -499,9 +489,7 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-3 text-mm-green">🚀 O curso ensina sobre delivery e aplicativos?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Sim. Além de ensinar o método Multi-Marcas, mostramos como dominar marketplaces como iFood, Rappi e 99Food para potencializar suas vendas.
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">Sim. Além de ensinar o método Multi-Marcas, mostramos tecnicas de vendas em marketplaces como iFood, Rappi e 99Food para potencializar suas vendas.</p>
                   </div>
                 </div>
               </CardContent>
