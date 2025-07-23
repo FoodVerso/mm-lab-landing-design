@@ -23,6 +23,14 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center">
             
+            {/* Logo */}
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/750e1df2-afde-452b-b3e9-26c460dee47f.png" 
+                alt="MM LAB Logo" 
+                className="w-64 h-auto mx-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
             
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
               Transforme sua cozinha em uma <span className="text-mm-green">máquina de lucro</span> com o método Multimarcas
