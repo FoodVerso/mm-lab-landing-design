@@ -59,15 +59,18 @@ const Index = () => {
               <div className="absolute -bottom-2 -right-4 w-6 h-10 border border-mm-red/50 rounded"></div>
               
               {/* Main Photo Container */}
-              <div className="relative p-4 bg-gradient-to-br from-mm-green/10 to-mm-red/10 rounded-2xl backdrop-blur-sm border border-mm-green/20 shadow-green-glow">
-                <img 
-                  src="/lovable-uploads/b07bc6f2-f3ce-4050-a7c7-2db37f5fcd32.png" 
-                  alt="William Flores - Criador do MM LAB" 
-                  className="w-80 h-80 object-contain rounded-xl shadow-lg"
-                />
+              <div className="relative p-2 bg-gradient-to-br from-mm-green/10 to-mm-red/10 rounded-2xl backdrop-blur-sm border border-mm-green/20 shadow-green-glow">
+                {/* Image that projects out of the container */}
+                <div className="relative -m-8 z-10">
+                  <img 
+                    src="/lovable-uploads/b07bc6f2-f3ce-4050-a7c7-2db37f5fcd32.png" 
+                    alt="William Flores - Criador do MM LAB" 
+                    className="w-96 h-96 object-contain rounded-xl shadow-2xl shadow-mm-green/20 hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
                 
                 {/* Name Tag */}
-                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-mm-black/90 backdrop-blur-sm px-6 py-3 rounded-full border border-mm-green/30">
+                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-mm-black/90 backdrop-blur-sm px-6 py-3 rounded-full border border-mm-green/30 z-20">
                   <p className="text-mm-green font-bold text-lg">William Flores</p>
                   <p className="text-muted-foreground text-sm text-center">Criador do MM LAB</p>
                 </div>
