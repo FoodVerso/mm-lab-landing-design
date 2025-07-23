@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ChefHat, DollarSign, Lightbulb, Package, Rocket, TrendingUp, Users, Star, CheckCircle, Play, Instagram, MessageCircle, Youtube, HelpCircle, Clock, Cpu, DollarSign as DollarSignIcon, CreditCard, HeadphonesIcon, Infinity, Smartphone } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import chefKitchen from "@/assets/chef-multibrand-kitchen.jpg";
@@ -355,149 +356,152 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* FAQ Item 1 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <HelpCircle className="h-5 w-5 text-mm-green" />
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="item-1" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <HelpCircle className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">🔥 O que é o MM LAB?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">🔥 O que é o MM LAB?</h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
                     <p className="text-muted-foreground leading-relaxed">O MM LAB é um curso 100% online onde você aprende o método Multi-Marcas, que permite operar várias marcas de delivery dentro da mesma cozinha, com o mesmo custo e estrutura, aumentando o faturamento sem abrir novas lojas físicas.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 2 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <Package className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-2" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <Package className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">📦 Eu preciso ter mais de uma cozinha para aplicar o método?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">📦 Eu preciso ter mais de uma cozinha para aplicar o método?</h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
                     <p className="text-muted-foreground leading-relaxed">Não! O método foi desenvolvido para ser aplicado também em uma única cozinha. Você usa o mesmo espaço e os mesmos recursos para escalar o delivery com novas marcas.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 3 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <Cpu className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-3" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <Cpu className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">💻 O curso é online ou presencial?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">💻 O curso é online ou presencial?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      O MM LAB é 100% online. Você pode assistir às aulas de qualquer lugar e no seu ritmo, com acesso vitalício ao conteúdo e futuras atualizações.
-                    </p>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
+                    <p className="text-muted-foreground leading-relaxed">O MM LAB é 100% online. Você pode assistir às aulas de qualquer lugar e no seu ritmo, com acesso vitalício ao conteúdo e futuras atualizações.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 4 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <Clock className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-4" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <Clock className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">⏳ Quanto tempo vou levar para ter resultados?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">⏳ Quanto tempo vou levar para ter resultados?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Depende do seu nível de implementação, mas nossos alunos começam a ver aumento no faturamento entre 15 e 60 dias após aplicar as estratégias.
-                    </p>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
+                    <p className="text-muted-foreground leading-relaxed">Depende do seu nível de implementação, mas nossos alunos começam a ver aumento no faturamento entre 15 e 60 dias após aplicar as estratégias.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 5 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <ChefHat className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-5" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <ChefHat className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">👨‍🍳 Sou dono de restaurante pequeno, esse curso serve para mim?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">👨‍🍳 Sou dono de restaurante pequeno, esse curso serve para mim?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Sim! O MM LAB é perfeito para pequenos e médios restaurantes que querem aumentar o faturamento usando a estrutura que já possuem.
-                    </p>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
+                    <p className="text-muted-foreground leading-relaxed">Sim! O MM LAB é perfeito para pequenos e médios restaurantes que querem aumentar o faturamento usando a estrutura que já possuem.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 6 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <CreditCard className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-6" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <CreditCard className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">💰 Qual é o valor do curso e as formas de pagamento?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">💰 Qual é o valor do curso e as formas de pagamento?</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      O investimento é de <span className="text-mm-green font-bold">R$97,00 à vista</span> ou <span className="text-mm-green font-bold">12x de R$97,00</span> no cartão. Aceitamos boleto, PIX e cartão de crédito.
-                    </p>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
+                    <p className="text-muted-foreground leading-relaxed">O investimento é de <span className="text-mm-green font-bold">R$97,00 à vista</span> ou <span className="text-mm-green font-bold">12x de R$97,00</span> no cartão. Aceitamos boleto, PIX e cartão de crédito.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 7 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <HeadphonesIcon className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-7" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <HeadphonesIcon className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">📝 Terei suporte durante o curso?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">📝 Terei suporte durante o curso?</h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
                     <p className="text-muted-foreground leading-relaxed">Sim! Você terá acesso a um suporte via Whatsapp e atualizações constantes do conteúdo, para garantir que você não fique com nenhuma dúvida.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 8 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <Infinity className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-8" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <Infinity className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">🔓 Por quanto tempo terei acesso ao conteúdo?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">🔓 Por quanto tempo terei acesso ao conteúdo?</h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
                     <p className="text-muted-foreground leading-relaxed">Nesta ofera o Acesso é vitalício. Você poderá assistir às aulas quantas vezes quiser e terá direito a todas as atualizações futuras.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            {/* FAQ Item 9 */}
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
-                    <Smartphone className="h-5 w-5 text-mm-green" />
+              <AccordionItem value="item-9" className="bg-card border-mm-green/20 rounded-lg hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-mm-green/20 rounded-full flex items-center justify-center">
+                      <Smartphone className="h-5 w-5 text-mm-green" />
+                    </div>
+                    <span className="text-lg font-bold text-mm-green">🚀 O curso ensina sobre delivery e aplicativos?</span>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3 text-mm-green">🚀 O curso ensina sobre delivery e aplicativos?</h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="pl-12">
                     <p className="text-muted-foreground leading-relaxed">Sim. Além de ensinar o método Multi-Marcas, mostramos tecnicas de vendas em marketplaces como iFood, Rappi e 99Food para potencializar suas vendas.</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
