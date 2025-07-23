@@ -38,12 +38,7 @@ const Index = () => {
             </p>
             
             <div className="flex justify-center">
-              <Button 
-                variant="cta-large" 
-                size="lg" 
-                className="text-lg px-10 py-5"
-                onClick={() => window.open('https://produtos.foguetewill.com.br/pay/9f750d73-43be-49cd-85f8-538b7a0d1265', '_blank')}
-              >
+              <Button variant="cta-large" size="lg" className="text-lg px-10 py-5" onClick={() => window.open('https://produtos.foguetewill.com.br/pay/9f750d73-43be-49cd-85f8-538b7a0d1265', '_blank')}>
                 Garanta Sua Vaga
               </Button>
             </div>
@@ -72,7 +67,7 @@ const Index = () => {
                 {/* Name Tag */}
                 <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-mm-black/90 backdrop-blur-sm rounded-full border border-mm-green/30 z-20 py-0 my-0 px-[13px] mx-[16px]">
                   <p className="text-mm-green font-bold my-[5px] text-lg py-0 px-[33px] mx-0">William </p>
-                  <p className="text-muted-foreground text-sm text-center mx-px px-[14px] py-px my-[3px]">E</p>
+                  <p className="text-muted-foreground text-sm text-center mx-px px-[14px] py-px my-[3px]">Especialista em Multimarcas</p>
                 </div>
               </div>
             </div>
@@ -337,11 +332,7 @@ const Index = () => {
                   <p className="text-muted-foreground">Acesso vitalício + atualizações grátis</p>
                 </div>
 
-                <Button 
-                  variant="cta-large" 
-                  className="w-full text-xl py-6 mb-6 mx-0 my-0 px-0"
-                  onClick={() => window.open('https://produtos.foguetewill.com.br/pay/9f750d73-43be-49cd-85f8-538b7a0d1265', '_blank')}
-                > 
+                <Button variant="cta-large" className="w-full text-xl py-6 mb-6 mx-0 my-0 px-0" onClick={() => window.open('https://produtos.foguetewill.com.br/pay/9f750d73-43be-49cd-85f8-538b7a0d1265', '_blank')}> 
                   Garantir Minha Vaga
                 </Button>
 
@@ -524,11 +515,7 @@ const Index = () => {
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
             Garanta sua vaga e faça sua cozinha trabalhar 100% do tempo.
           </p>
-          <Button 
-            variant="cta-large" 
-            className="text-xl px-12 py-6 shadow-green-glow hover:shadow-red-glow"
-            onClick={() => window.open('https://produtos.foguetewill.com.br/pay/9f750d73-43be-49cd-85f8-538b7a0d1265', '_blank')}
-          >
+          <Button variant="cta-large" className="text-xl px-12 py-6 shadow-green-glow hover:shadow-red-glow" onClick={() => window.open('https://produtos.foguetewill.com.br/pay/9f750d73-43be-49cd-85f8-538b7a0d1265', '_blank')}>
             Garanta Sua Vaga Agora
           </Button>
         </div>
