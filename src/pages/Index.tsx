@@ -139,7 +139,16 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              
+              <CardContent className="p-6">
+                <img 
+                  src="/lovable-uploads/af32416f-fd39-4027-999c-5dce6c4b9b04.png" 
+                  alt="Resultado financeiro do aplicativo iFood" 
+                  className="w-full h-auto rounded-lg mb-4 shadow-lg"
+                />
+                <p className="text-center text-muted-foreground font-medium">
+                  Marca de comida com 12 dias de abertura
+                </p>
+              </CardContent>
             </Card>
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
