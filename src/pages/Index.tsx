@@ -65,9 +65,9 @@ const Index = () => {
                 </div>
                 
                 {/* Name Tag */}
-                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-mm-black/90 backdrop-blur-sm rounded-full border border-mm-green/30 z-20 my-[10px] mx-[66px] px-[50px] py-[6px]">
-                  <p className="text-mm-green font-bold mx-[7px] my-[5px] px-[28px] py-px text-lg">William Flores</p>
-                  <p className="text-muted-foreground text-sm text-center px-0 my-0 py-0 mx-0">Criador do MM LAB</p>
+                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-mm-black/90 backdrop-blur-sm rounded-full border border-mm-green/30 z-20 py-0 my-0 px-[13px] mx-[16px]">
+                  <p className="text-mm-green font-bold my-[5px] text-lg py-0 px-[33px] mx-0">William </p>
+                  <p className="text-muted-foreground text-sm text-center mx-px px-[14px] py-px my-[3px]">E</p>
                 </div>
               </div>
             </div>
@@ -332,9 +332,7 @@ const Index = () => {
                   <p className="text-muted-foreground">Acesso vitalício + atualizações grátis</p>
                 </div>
 
-                <Button variant="cta-large" className="w-full text-xl py-6 mb-6">
-                  Quero Garantir Minha Vaga
-                </Button>
+                <Button variant="cta-large" className="w-full text-xl py-6 mb-6 mx-0 my-0 px-0"> Garantir Minha Vaga</Button>
 
                 <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                   <CheckCircle className="h-4 w-4 text-mm-green" />
