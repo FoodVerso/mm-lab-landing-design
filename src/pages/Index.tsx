@@ -171,69 +171,20 @@ const Index = () => {
         </div>
       </section>
 
-      {/* What's Inside Section - Responsive Design */}
+      {/* What's Inside Section - Futuristic Circle Design */}
       <section className="py-20 bg-black relative overflow-hidden">
         {/* Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-emerald-500/10"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-6 text-white font-inter">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-inter">
               5 Módulos de <span className="text-emerald-400">Domínio</span>
             </h2>
+            
           </div>
 
-          {/* Mobile Version - Simple Cards */}
-          <div className="block lg:hidden">
-            <div className="max-w-md mx-auto space-y-4">
-              {/* Central Logo */}
-              <div className="flex justify-center mb-8">
-                <div className="w-24 h-24 bg-black border-4 border-emerald-400 rounded-full shadow-lg flex items-center justify-center">
-                  <img src="/lovable-uploads/e2a75c12-5c2c-49b5-9bd7-ead33299042c.png" alt="MM LAB Logo" className="w-16 h-16 object-contain" />
-                  <div className="absolute inset-0 rounded-full bg-emerald-400/20 animate-ping"></div>
-                </div>
-              </div>
-
-              {/* Module Cards */}
-              <Card className="bg-gray-900/95 border-2 border-emerald-400/60 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300">
-                <CardContent className="p-4 text-center">
-                  <div className="text-sm font-bold text-emerald-400 mb-2">MÓDULO 1</div>
-                  <div className="text-sm text-gray-300">CONCEITO MULTI-MARCAS</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gray-900/95 border-2 border-emerald-400/60 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300">
-                <CardContent className="p-4 text-center">
-                  <div className="text-sm font-bold text-emerald-400 mb-2">MÓDULO 2</div>
-                  <div className="text-sm text-gray-300">CONTABILIDADE INTELIGENTE</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gray-900/95 border-2 border-emerald-400/60 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300">
-                <CardContent className="p-4 text-center">
-                  <div className="text-sm font-bold text-emerald-400 mb-2">MÓDULO 3</div>
-                  <div className="text-sm text-gray-300">SISTEMAS E FERRAMENTAS</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gray-900/95 border-2 border-emerald-400/60 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300">
-                <CardContent className="p-4 text-center">
-                  <div className="text-sm font-bold text-emerald-400 mb-2">MÓDULO 4</div>
-                  <div className="text-sm text-gray-300">VENDAS MULTI-MARCAS</div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gray-900/95 border-2 border-emerald-400/60 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-300">
-                <CardContent className="p-4 text-center">
-                  <div className="text-sm font-bold text-emerald-400 mb-2">BÔNUS</div>
-                  <div className="text-sm text-gray-300">MÓDULO EXTRA</div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          {/* Desktop Version - Flywheel Design */}
-          <div className="hidden lg:flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
             {/* Central Flywheel Design - Centered on desktop */}
             <div className="relative w-full lg:w-auto flex justify-center">
               {/* Outer Energy Ring */}
@@ -325,6 +276,9 @@ const Index = () => {
               <div className="relative">
                 {/* Background glow for image */}
                 <div className="absolute -inset-12 bg-gradient-to-r from-emerald-400/20 to-transparent rounded-full blur-3xl"></div>
+                
+                {/* Main image */}
+                
                 
                 {/* Decorative elements around image */}
                 <div className="absolute top-10 right-10 w-3 h-3 bg-emerald-400 rounded-full animate-ping"></div>
