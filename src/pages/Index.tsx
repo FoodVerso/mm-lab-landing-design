@@ -25,11 +25,7 @@ const Index = () => {
             
             {/* Logo */}
             <div className="mb-8">
-              <img 
-                src="/lovable-uploads/750e1df2-afde-452b-b3e9-26c460dee47f.png" 
-                alt="MM LAB Logo" 
-                className="w-64 h-auto mx-auto opacity-90 hover:opacity-100 transition-opacity duration-300"
-              />
+              <img src="/lovable-uploads/750e1df2-afde-452b-b3e9-26c460dee47f.png" alt="MM LAB Logo" className="w-64 h-auto mx-auto opacity-90 hover:opacity-100 transition-opacity duration-300" />
             </div>
             
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
@@ -140,11 +136,7 @@ const Index = () => {
           <div className="grid gap-8">
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
               <CardContent className="p-6">
-                <img 
-                  src="/lovable-uploads/af32416f-fd39-4027-999c-5dce6c4b9b04.png" 
-                  alt="Resultado financeiro do aplicativo iFood" 
-                  className="w-full h-auto rounded-lg mb-4 shadow-lg"
-                />
+                <img src="/lovable-uploads/af32416f-fd39-4027-999c-5dce6c4b9b04.png" alt="Resultado financeiro do aplicativo iFood" className="w-full h-auto rounded-lg mb-4 shadow-lg" />
                 <p className="text-center text-muted-foreground font-medium">
                   Marca de comida com 12 dias de abertura
                 </p>
@@ -153,11 +145,7 @@ const Index = () => {
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
               <CardContent className="p-6">
-                <img 
-                  src="/lovable-uploads/eef31798-8226-4275-8b3d-8a3e23249200.png" 
-                  alt="Açaiteca - Loja de açaí do aluno Daniel" 
-                  className="w-full h-auto rounded-lg mb-4 shadow-lg"
-                />
+                <img src="/lovable-uploads/eef31798-8226-4275-8b3d-8a3e23249200.png" alt="Açaiteca - Loja de açaí do aluno Daniel" className="w-full h-auto rounded-lg mb-4 shadow-lg" />
                 <p className="text-center text-muted-foreground font-medium">
                   Aluno Daniel vendia doces e bolos e após implantar o método criou uma marca de açaí na mesma cozinha
                 </p>
@@ -167,11 +155,7 @@ const Index = () => {
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300 transform hover:scale-105 shadow-green-glow hover:shadow-lg w-full">
               <CardContent className="p-4 md:p-8">
                 <div className="max-w-2xl mx-auto">
-                  <img 
-                    src="/lovable-uploads/1a6fcfd7-2916-4517-bf76-f0e112845dc8.png" 
-                    alt="Will The Burguer - Dashboard de vendas com 3 lojas" 
-                    className="w-full h-auto rounded-lg mb-4 md:mb-6 shadow-2xl border border-mm-green/30"
-                  />
+                  <img src="/lovable-uploads/1a6fcfd7-2916-4517-bf76-f0e112845dc8.png" alt="Will The Burguer - Dashboard de vendas com 3 lojas" className="w-full h-auto rounded-lg mb-4 md:mb-6 shadow-2xl border border-mm-green/30" />
                   <p className="text-center text-muted-foreground font-bold text-base md:text-lg bg-gradient-mixed bg-clip-text text-transparent">
                     ⭐ Criei 3 lojas dentro da mesma cozinha, resultado de 30 dias apenas no iFood ⭐
                   </p>
@@ -192,9 +176,7 @@ const Index = () => {
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-inter">
               5 Módulos de <span className="text-emerald-400">Domínio</span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Durante 5 módulos você vai revelar a minha <span className="text-emerald-400 font-bold">flywheel milionária</span>.
-            </p>
+            
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-0">
@@ -291,7 +273,7 @@ const Index = () => {
                 <div className="absolute -inset-12 bg-gradient-to-r from-emerald-400/20 to-transparent rounded-full blur-3xl"></div>
                 
                 {/* Main image */}
-                <img src="/lovable-uploads/2f2aed23-036f-4ec6-9101-67ede809f716.png" alt="William Flores - Criador do MM LAB" className="w-full max-w-md h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-500 relative z-10" />
+                
                 
                 {/* Decorative elements around image */}
                 <div className="absolute top-10 right-10 w-3 h-3 bg-emerald-400 rounded-full animate-ping"></div>
@@ -306,9 +288,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-16">
-            <p className="text-xl text-gray-300 italic max-w-4xl mx-auto leading-relaxed">
-              "Em 5 módulos você dominará o método Multi-Marcas para escalar seu restaurante e faturar mais com a mesma cozinha."
-            </p>
+            <p className="text-xl text-gray-300 italic max-w-4xl mx-auto leading-relaxed">Ou você usa o multi-marcas antes que todo mundo descubra essa técnica ou você verá seu concorrente te atropelando nos proximos meses!</p>
           </div>
         </div>
 
@@ -328,9 +308,7 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-b from-mm-dark-gray to-mm-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
-              Invista no seu Restaurante
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">CONDIÇÃO ESPECIAL</h2>
           </div>
 
           <div className="max-w-lg mx-auto">
