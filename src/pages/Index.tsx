@@ -72,7 +72,7 @@ const Index = () => {
               {/* Main Photo Container */}
               <div className="relative p-4 bg-gradient-to-br from-mm-green/10 to-mm-red/10 rounded-2xl backdrop-blur-sm border border-mm-green/20 shadow-green-glow">
                 <img 
-                  src="/lovable-uploads/cf0dfec6-f3b7-4f18-be27-4180aaf70486.png" 
+                  src="/lovable-uploads/b07bc6f2-f3ce-4050-a7c7-2db37f5fcd32.png" 
                   alt="William Flores - Criador do MM LAB" 
                   className="w-80 h-80 object-cover rounded-xl shadow-lg"
                 />
