@@ -196,55 +196,95 @@ const Index = () => {
       </section>
 
       {/* What's Inside Section */}
-      <section className="py-20 bg-gradient-to-b from-mm-black/90 to-mm-dark-gray">
+      <section className="py-20 bg-gradient-to-b from-mm-black/90 to-mm-dark-gray relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
-              O Que Você Vai Aprender
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              4 Módulos de <span className="text-mm-green">Transformação</span>
             </h2>
+            <p className="text-lg text-white/80 max-w-2xl mx-auto">
+              Durante 4 módulos você vai revelar a minha <span className="text-mm-green font-bold">máquina de lucro</span>.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 1 – Conceito de Multi-Marcas</h3>
-                <p className="text-muted-foreground">Entenda a estratégia por trás do método que revoluciona restaurantes.</p>
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
+            {/* Central Circle Design */}
+            <div className="relative">
+              {/* Outer Glow Ring */}
+              <div className="absolute inset-0 w-96 h-96 rounded-full bg-gradient-to-r from-mm-green/20 to-transparent animate-spin" style={{animationDuration: '8s'}}></div>
+              <div className="absolute inset-2 w-92 h-92 rounded-full bg-gradient-to-l from-mm-green/30 to-transparent animate-spin" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
+              
+              {/* Main Circle */}
+              <div className="relative w-80 h-80 mx-auto">
+                {/* Center Core */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-mm-green/20 rounded-full border-2 border-mm-green shadow-green-glow flex items-center justify-center">
+                  <div className="text-center">
+                    <ChefHat className="h-8 w-8 text-mm-green mx-auto mb-2" />
+                    <span className="text-sm font-bold text-mm-green">MM LAB</span>
+                  </div>
+                </div>
+
+                {/* Module Segments */}
+                {/* Módulo 1 - Top */}
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                  <div className="text-center">
+                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 1</div>
+                    <div className="text-[10px] text-white">Conceito</div>
+                  </div>
+                </div>
+
+                {/* Módulo 2 - Right */}
+                <div className="absolute top-1/2 right-4 transform -translate-y-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                  <div className="text-center">
+                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 2</div>
+                    <div className="text-[10px] text-white">Contabilidade</div>
+                  </div>
+                </div>
+
+                {/* Módulo 3 - Bottom */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                  <div className="text-center">
+                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 3</div>
+                    <div className="text-[10px] text-white">Sistemas</div>
+                  </div>
+                </div>
+
+                {/* Módulo 4 - Left */}
+                <div className="absolute top-1/2 left-4 transform -translate-y-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
+                  <div className="text-center">
+                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 4</div>
+                    <div className="text-[10px] text-white">Vendas</div>
+                  </div>
+                </div>
+
+                {/* Energy Lines connecting segments */}
+                <div className="absolute inset-0">
+                  <div className="absolute top-20 left-1/2 w-0.5 h-20 bg-gradient-to-b from-mm-green/60 to-transparent"></div>
+                  <div className="absolute top-1/2 right-20 h-0.5 w-20 bg-gradient-to-r from-mm-green/60 to-transparent"></div>
+                  <div className="absolute bottom-20 left-1/2 w-0.5 h-20 bg-gradient-to-t from-mm-green/60 to-transparent"></div>
+                  <div className="absolute top-1/2 left-20 h-0.5 w-20 bg-gradient-to-l from-mm-green/60 to-transparent"></div>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 2 – Contabilidade Inteligente</h3>
-                <p className="text-muted-foreground">Organize suas finanças para múltiplas marcas de forma eficiente.</p>
-              </div>
+            {/* William Flores Image */}
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/b07bc6f2-f3ce-4050-a7c7-2db37f5fcd32.png" 
+                alt="William Flores - Criador do MM LAB" 
+                className="w-64 h-64 object-contain rounded-xl"
+              />
+              <div className="absolute -inset-4 bg-gradient-to-r from-mm-green/20 to-transparent rounded-xl blur-xl"></div>
             </div>
+          </div>
 
-            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 3 – Sistemas e Ferramentas</h3>
-                <p className="text-muted-foreground">As melhores ferramentas para automatizar sua operação.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg mb-2 text-mm-green">Módulo 4 – Vendas e Escala</h3>
-                <p className="text-muted-foreground">Estratégias para maximizar vendas em cada marca.</p>
-              </div>
-            </div>
-
-
-            <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              <CheckCircle className="h-8 w-8 text-mm-green flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-lg mb-2 text-mm-green">Acesso Vitalício</h3>
-                <p className="text-muted-foreground">Conteúdo sempre disponível com atualizações gratuitas.</p>
-              </div>
-            </div>
+          <div className="text-center mt-16">
+            <p className="text-white/80 mb-4">
+              Foi assim que criei o plano perfeito para criar um
+            </p>
+            <p className="text-2xl font-bold text-mm-green">
+              negócio que fatura mais de 100 milhões todos os anos
+            </p>
           </div>
         </div>
       </section>
