@@ -249,24 +249,24 @@ const Index = () => {
                   </div>
                 </div>
 
-                {/* Módulo 3 - Bottom Right (5 o'clock) */}
-                <div className="absolute bottom-16 right-20 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                {/* Módulo 3 - Bottom Right (4:30 o'clock) */}
+                <div className="absolute bottom-8 right-24 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
                   <div className="p-4 text-center h-full flex flex-col justify-center">
                     <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 3</div>
                     <div className="text-xs text-gray-300 leading-tight">SISTEMAS E<br/>FERRAMENTAS</div>
                   </div>
                 </div>
 
-                {/* Módulo 4 - Bottom Left (7 o'clock) */}
-                <div className="absolute bottom-16 left-20 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                {/* Módulo 4 - Bottom Left (7:30 o'clock) */}
+                <div className="absolute bottom-8 left-24 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
                   <div className="p-4 text-center h-full flex flex-col justify-center">
                     <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 4</div>
                     <div className="text-xs text-gray-300 leading-tight">VENDAS<br/>MULTI-MARCAS</div>
                   </div>
                 </div>
 
-                {/* Módulo Bônus - Top Left (10 o'clock) */}
-                <div className="absolute top-16 left-20 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
+                {/* Módulo Bônus - Left (9 o'clock) */}
+                <div className="absolute top-1/2 left-8 transform -translate-y-1/2 w-36 h-24 bg-gray-900/95 border-2 border-emerald-400/60 rounded-xl backdrop-blur-sm hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-400/30 transition-all duration-500 group cursor-pointer">
                   <div className="p-4 text-center h-full flex flex-col justify-center">
                     <div className="text-sm font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">BÔNUS</div>
                     <div className="text-xs text-gray-300 leading-tight">MÓDULO<br/>EXTRA</div>
