@@ -35,7 +35,7 @@ const Index = () => {
             <Button variant="cta-large" size="lg" className="text-xl px-12 py-6">
               Garanta Sua Vaga
             </Button>
-            <Button variant="secondary-outline" size="lg" className="flex items-center gap-2">
+            <Button variant="red-outline" size="lg" className="flex items-center gap-2">
               <Play className="h-5 w-5" />
               Assista ao vídeo de apresentação
             </Button>
@@ -47,7 +47,7 @@ const Index = () => {
       <section className="py-20 bg-mm-dark-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-mixed bg-clip-text text-transparent">
               O Que é o MM LAB?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -56,7 +56,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+            <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Rocket className="h-16 w-16 text-mm-green mx-auto mb-6" />
                 <h3 className="text-2xl font-bold mb-4 text-mm-green">Escalabilidade</h3>
@@ -66,10 +66,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
+            <Card className="bg-card border-mm-red/20 hover:border-mm-red hover:shadow-red-glow transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <Package className="h-16 w-16 text-mm-green mx-auto mb-6" />
-                <h3 className="text-2xl font-bold mb-4 text-mm-green">Logística Otimizada</h3>
+                <Package className="h-16 w-16 text-mm-red mx-auto mb-6" />
+                <h3 className="text-2xl font-bold mb-4 text-mm-red">Logística Otimizada</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Organize sua operação para múltiplas marcas.
                 </p>
@@ -234,7 +234,7 @@ const Index = () => {
           <div className="max-w-lg mx-auto">
             <Card className="bg-card border-2 border-mm-green shadow-green-glow">
               <CardContent className="p-12 text-center">
-                <div className="bg-mm-green text-mm-black px-4 py-2 rounded-full text-sm font-bold mb-8 inline-block">
+                <div className="bg-mm-red text-white px-4 py-2 rounded-full text-sm font-bold mb-8 inline-block shadow-red-glow">
                   Lote Promocional – Últimas Vagas
                 </div>
                 
@@ -261,13 +261,13 @@ const Index = () => {
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-mm-green">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-mixed bg-clip-text text-transparent">
             Pronto Para Escalar Seu Restaurante?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Garanta sua vaga e faça sua cozinha trabalhar 100% do tempo.
           </p>
-          <Button variant="cta-large" className="text-xl px-12 py-6 shadow-green-glow">
+          <Button variant="cta-large" className="text-xl px-12 py-6 shadow-green-glow hover:shadow-red-glow">
             Garanta Sua Vaga Agora
           </Button>
         </div>

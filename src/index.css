@@ -40,16 +40,22 @@ All colors MUST be HSL.
     --mm-green: 150 100% 50%;
     --mm-green-secondary: 150 100% 40%;
     --mm-green-light: 150 100% 60%;
+    --mm-red: 14 76% 48%;
+    --mm-red-dark: 14 76% 35%;
+    --mm-red-light: 14 76% 60%;
     --mm-black: 0 0% 0%;
     --mm-dark-gray: 0 0% 5%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(150, 100%, 50%), hsl(150, 100%, 40%));
-    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 0%) 0%, hsl(150, 100%, 50%, 0.1) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 0%) 0%, hsl(150, 100%, 50%, 0.1) 50%, hsl(14, 76%, 48%, 0.05) 100%);
     --gradient-cta: linear-gradient(135deg, hsl(150, 100%, 50%), hsl(150, 100%, 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(14, 76%, 48%), hsl(14, 76%, 60%));
+    --gradient-mixed: linear-gradient(135deg, hsl(150, 100%, 50%) 0%, hsl(14, 76%, 48%) 100%);
 
     /* Shadows */
     --shadow-green-glow: 0 0 30px hsl(150, 100%, 50%, 0.3);
+    --shadow-red-glow: 0 0 30px hsl(14, 76%, 48%, 0.3);
     --shadow-card: 0 10px 30px hsl(0, 0%, 0%, 0.5);
 
     /* Animations */

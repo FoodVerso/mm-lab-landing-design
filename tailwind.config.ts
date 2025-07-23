@@ -66,16 +66,22 @@ export default {
 				'mm-green': 'hsl(var(--mm-green))',
 				'mm-green-secondary': 'hsl(var(--mm-green-secondary))',
 				'mm-green-light': 'hsl(var(--mm-green-light))',
+				'mm-red': 'hsl(var(--mm-red))',
+				'mm-red-dark': 'hsl(var(--mm-red-dark))',
+				'mm-red-light': 'hsl(var(--mm-red-light))',
 				'mm-black': 'hsl(var(--mm-black))',
 				'mm-dark-gray': 'hsl(var(--mm-dark-gray))'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-cta': 'var(--gradient-cta)'
+				'gradient-cta': 'var(--gradient-cta)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-mixed': 'var(--gradient-mixed)'
 			},
 			boxShadow: {
 				'green-glow': 'var(--shadow-green-glow)',
+				'red-glow': 'var(--shadow-red-glow)',
 				'card-mm': 'var(--shadow-card)'
 			},
 			transitionTimingFunction: {
