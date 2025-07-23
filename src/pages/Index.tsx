@@ -152,7 +152,16 @@ const Index = () => {
             </Card>
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
-              
+              <CardContent className="p-6">
+                <img 
+                  src="/lovable-uploads/eef31798-8226-4275-8b3d-8a3e23249200.png" 
+                  alt="Açaiteca - Loja de açaí do aluno Daniel" 
+                  className="w-full h-auto rounded-lg mb-4 shadow-lg"
+                />
+                <p className="text-center text-muted-foreground font-medium">
+                  Aluno Daniel vendia doces e bolos e após implantar o método criou uma marca de açaí na mesma cozinha
+                </p>
+              </CardContent>
             </Card>
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green transition-all duration-300">
