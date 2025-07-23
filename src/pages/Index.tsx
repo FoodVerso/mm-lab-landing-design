@@ -195,98 +195,121 @@ const Index = () => {
         </div>
       </section>
 
-      {/* What's Inside Section */}
-      <section className="py-20 bg-gradient-to-b from-mm-black/90 to-mm-dark-gray relative overflow-hidden">
-        <div className="container mx-auto px-4">
+      {/* What's Inside Section - Futuristic Circle Design */}
+      <section className="py-20 bg-black relative overflow-hidden">
+        {/* Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-emerald-500/10"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              4 Módulos de <span className="text-mm-green">Transformação</span>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white font-inter">
+              5 Módulos de <span className="text-emerald-400">Domínio</span>
             </h2>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              Durante 4 módulos você vai revelar a minha <span className="text-mm-green font-bold">máquina de lucro</span>.
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Durante 5 módulos você vai revelar a minha <span className="text-emerald-400 font-bold">flywheel milionária</span>.
             </p>
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
-            {/* Central Circle Design */}
+            {/* Central Circular Design */}
             <div className="relative">
-              {/* Outer Glow Ring */}
-              <div className="absolute inset-0 w-96 h-96 rounded-full bg-gradient-to-r from-mm-green/20 to-transparent animate-spin" style={{animationDuration: '8s'}}></div>
-              <div className="absolute inset-2 w-92 h-92 rounded-full bg-gradient-to-l from-mm-green/30 to-transparent animate-spin" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
-              
-              {/* Main Circle */}
+              {/* Outer Energy Rings */}
+              <div className="absolute inset-0 w-96 h-96">
+                <div className="absolute inset-0 rounded-full border-2 border-emerald-400/30 animate-spin" style={{animationDuration: '8s'}}></div>
+                <div className="absolute inset-4 rounded-full border border-emerald-400/20 animate-spin" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
+                <div className="absolute inset-8 rounded-full border border-emerald-400/10 animate-spin" style={{animationDuration: '10s'}}></div>
+              </div>
+
+              {/* Neon Glow Effect */}
+              <div className="absolute inset-0 w-96 h-96 rounded-full bg-emerald-400/5 blur-xl animate-pulse"></div>
+              <div className="absolute inset-12 w-72 h-72 rounded-full bg-emerald-400/10 blur-lg animate-pulse" style={{animationDelay: '1s'}}></div>
+
+              {/* Main Circle Container */}
               <div className="relative w-80 h-80 mx-auto">
-                {/* Center Core */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-mm-green/20 rounded-full border-2 border-mm-green shadow-green-glow flex items-center justify-center">
+                {/* Center Core - MM LAB */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-black border-2 border-emerald-400 rounded-full shadow-lg flex items-center justify-center">
                   <div className="text-center">
-                    <ChefHat className="h-8 w-8 text-mm-green mx-auto mb-2" />
-                    <span className="text-sm font-bold text-mm-green">MM LAB</span>
+                    <div className="text-emerald-400 font-bold text-sm">MM LAB</div>
                   </div>
+                  <div className="absolute inset-0 rounded-full bg-emerald-400/20 animate-ping"></div>
                 </div>
 
                 {/* Module Segments */}
                 {/* Módulo 1 - Top */}
-                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 1</div>
-                    <div className="text-[10px] text-white">Conceito</div>
+                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
+                  <div className="p-3 text-center">
+                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 1</div>
+                    <div className="text-[10px] text-gray-300 leading-tight">CONCEITO</div>
                   </div>
                 </div>
 
-                {/* Módulo 2 - Right */}
-                <div className="absolute top-1/2 right-4 transform -translate-y-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 2</div>
-                    <div className="text-[10px] text-white">Contabilidade</div>
+                {/* Módulo 2 - Top Right */}
+                <div className="absolute top-16 right-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
+                  <div className="p-3 text-center">
+                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 2</div>
+                    <div className="text-[10px] text-gray-300 leading-tight">CONTABILIDADE</div>
                   </div>
                 </div>
 
-                {/* Módulo 3 - Bottom */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 3</div>
-                    <div className="text-[10px] text-white">Sistemas</div>
+                {/* Módulo 3 - Bottom Right */}
+                <div className="absolute bottom-16 right-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
+                  <div className="p-3 text-center">
+                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 3</div>
+                    <div className="text-[10px] text-gray-300 leading-tight">SISTEMAS</div>
                   </div>
                 </div>
 
-                {/* Módulo 4 - Left */}
-                <div className="absolute top-1/2 left-4 transform -translate-y-1/2 w-24 h-16 bg-mm-dark-gray/90 border border-mm-green/50 rounded-lg flex items-center justify-center hover:border-mm-green hover:shadow-green-glow transition-all duration-300">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-mm-green mb-1">MÓDULO 4</div>
-                    <div className="text-[10px] text-white">Vendas</div>
+                {/* Módulo 4 - Bottom Left */}
+                <div className="absolute bottom-16 left-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
+                  <div className="p-3 text-center">
+                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">MÓDULO 4</div>
+                    <div className="text-[10px] text-gray-300 leading-tight">VENDAS</div>
                   </div>
                 </div>
 
-                {/* Energy Lines connecting segments */}
-                <div className="absolute inset-0">
-                  <div className="absolute top-20 left-1/2 w-0.5 h-20 bg-gradient-to-b from-mm-green/60 to-transparent"></div>
-                  <div className="absolute top-1/2 right-20 h-0.5 w-20 bg-gradient-to-r from-mm-green/60 to-transparent"></div>
-                  <div className="absolute bottom-20 left-1/2 w-0.5 h-20 bg-gradient-to-t from-mm-green/60 to-transparent"></div>
-                  <div className="absolute top-1/2 left-20 h-0.5 w-20 bg-gradient-to-l from-mm-green/60 to-transparent"></div>
+                {/* Módulo Bônus - Top Left */}
+                <div className="absolute top-16 left-8 w-32 h-20 bg-gray-900/90 border border-emerald-400/50 rounded-lg backdrop-blur-sm hover:border-emerald-400 hover:shadow-emerald-400/50 hover:shadow-lg transition-all duration-500 group">
+                  <div className="p-3 text-center">
+                    <div className="text-xs font-bold text-emerald-400 mb-1 group-hover:text-white transition-colors">BÔNUS</div>
+                    <div className="text-[10px] text-gray-300 leading-tight">EXTRA</div>
+                  </div>
+                </div>
+
+                {/* Energy Lines */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <div className="absolute top-24 left-1/2 w-px h-16 bg-gradient-to-b from-emerald-400/60 to-transparent animate-pulse"></div>
+                  <div className="absolute top-1/2 right-24 h-px w-16 bg-gradient-to-r from-emerald-400/60 to-transparent animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  <div className="absolute bottom-24 left-1/2 w-px h-16 bg-gradient-to-t from-emerald-400/60 to-transparent animate-pulse" style={{animationDelay: '1s'}}></div>
+                  <div className="absolute top-1/2 left-24 h-px w-16 bg-gradient-to-l from-emerald-400/60 to-transparent animate-pulse" style={{animationDelay: '1.5s'}}></div>
+                  <div className="absolute top-32 left-32 w-px h-12 bg-gradient-to-b from-emerald-400/40 to-transparent animate-pulse transform rotate-45" style={{animationDelay: '2s'}}></div>
                 </div>
               </div>
             </div>
 
             {/* William Flores Image */}
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/b07bc6f2-f3ce-4050-a7c7-2db37f5fcd32.png" 
-                alt="William Flores - Criador do MM LAB" 
-                className="w-64 h-64 object-contain rounded-xl"
-              />
-              <div className="absolute -inset-4 bg-gradient-to-r from-mm-green/20 to-transparent rounded-xl blur-xl"></div>
+            <div className="relative lg:absolute lg:right-10 lg:top-1/2 lg:transform lg:-translate-y-1/2">
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/2f2aed23-036f-4ec6-9101-67ede809f716.png" 
+                  alt="William Flores - Criador do MM LAB" 
+                  className="w-72 h-96 object-contain opacity-80 hover:opacity-100 transition-opacity duration-500"
+                />
+                <div className="absolute -inset-8 bg-gradient-to-l from-emerald-400/10 to-transparent rounded-xl blur-2xl"></div>
+              </div>
             </div>
           </div>
 
-          <div className="text-center mt-16">
-            <p className="text-white/80 mb-4">
-              Foi assim que criei o plano perfeito para criar um
-            </p>
-            <p className="text-2xl font-bold text-mm-green">
-              negócio que fatura mais de 100 milhões todos os anos
+          <div className="text-center mt-20">
+            <p className="text-xl text-gray-300 italic max-w-4xl mx-auto leading-relaxed">
+              "Em 5 módulos você dominará o método Multi-Marcas para escalar seu restaurante e faturar mais com a mesma cozinha."
             </p>
           </div>
         </div>
+
+        {/* Additional Background Effects */}
+        <div className="absolute top-0 left-1/4 w-2 h-2 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-10 right-1/4 w-1 h-1 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-1/3 left-10 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping" style={{animationDelay: '6s'}}></div>
       </section>
 
       {/* Pricing Section */}
