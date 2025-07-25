@@ -327,7 +327,7 @@ const Index = () => {
                   <div className="text-xl text-muted-foreground mb-2">
                     <span className="line-through">R$ 194,00</span>
                   </div>
-                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 97</div>
+                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 197</div>
                   <div className="text-xl text-mm-red font-bold mb-4">50% OFF</div>
                   <p className="text-muted-foreground">Acesso vitalício + atualizações grátis</p>
                 </div>
@@ -449,7 +449,7 @@ const Index = () => {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div className="pl-12">
-                    <p className="text-muted-foreground leading-relaxed">O investimento é de <span className="text-mm-green font-bold">R$97,00 à vista</span> ou <span className="text-mm-green font-bold">12x de R$97,00</span> no cartão. Aceitamos boleto, PIX e cartão de crédito.</p>
+                    <p className="text-muted-foreground leading-relaxed">O investimento é de <span className="text-mm-green font-bold">R$197,00 à vista</span> ou <span className="text-mm-green font-bold">12x de R$197,00</span> no cartão. Aceitamos boleto, PIX e cartão de crédito.</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
