@@ -325,10 +325,10 @@ const Index = () => {
                 
                 <div className="mb-8">
                   <div className="text-xl text-muted-foreground mb-2">
-                    <span className="line-through">R$ 194,00</span>
+                    <span className="line-through">R$ 297</span>
                   </div>
-                  <div className="text-6xl font-bold text-mm-green mb-2">R$ 197</div>
-                  <div className="text-xl text-mm-red font-bold mb-4">50% OFF</div>
+                  <div className="text-6xl font-bold text-mm-green mb-2">12x R$20,24</div>
+                  <div className="text-xl text-mm-red font-bold mb-4">Pague com poucos pedido</div>
                   <p className="text-muted-foreground">Acesso vitalício + atualizações grátis</p>
                 </div>
 
@@ -336,7 +336,7 @@ const Index = () => {
                   Garantir Minha Vaga
                 </Button>
 
-                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mx-[8px] px-[5px] my-[15px]">
                   <CheckCircle className="h-4 w-4 text-mm-green" />
                   Garantia de 7 dias
                 </div>
