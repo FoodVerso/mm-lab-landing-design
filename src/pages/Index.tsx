@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ChefHat, DollarSign, Lightbulb, Package, Rocket, TrendingUp, Users, Star, CheckCircle, Play, Instagram, MessageCircle, Youtube, HelpCircle, Clock, Cpu, DollarSign as DollarSignIcon, CreditCard, HeadphonesIcon, Infinity, Smartphone } from "lucide-react";
+import { ChefHat, DollarSign, Lightbulb, Package, Rocket, TrendingUp, Users, Star, CheckCircle, Play, Instagram, MessageCircle, Youtube, HelpCircle, Clock, Cpu, CreditCard, HeadphonesIcon, Infinity, Smartphone } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import chefKitchen from "@/assets/chef-multibrand-kitchen.jpg";
 const Index = () => {
