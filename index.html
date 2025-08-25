@@ -8,6 +8,44 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-N9H9N5NQ');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1157580415379846');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1157580415379846&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-76HE4F9WQK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-76HE4F9WQK');
+    </script>
+    <!-- End Google Analytics 4 -->
+
+    <!-- Google Ads Conversion Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16569360111"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16569360111');
+    </script>
+    <!-- End Google Ads Conversion Tracking -->
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,24 +76,386 @@
     
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- UTMify Scripts -->
+    <script>
+      window.pixelId = "687fc07e08586211d38614c9";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+
+    <!-- Custom Tracking Events -->
+    <script>
+      // Wait for DOM to be fully loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        
+        // Track time on page
+        let startTime = Date.now();
+        let timeThresholds = [30000, 60000, 120000, 300000]; // 30s, 1min, 2min, 5min
+        let thresholdsPassed = [];
+
+        timeThresholds.forEach(function(threshold) {
+          setTimeout(function() {
+            if (!thresholdsPassed.includes(threshold)) {
+              thresholdsPassed.push(threshold);
+              let timeLabel = threshold / 1000 + 's';
+              
+              // Facebook Pixel
+              fbq('trackCustom', 'TimeOnPage', { time_spent: timeLabel });
+              
+              // Google Analytics
+              gtag('event', 'time_on_page', {
+                'custom_parameter': timeLabel,
+                'event_category': 'engagement',
+                'event_label': timeLabel
+              });
+              
+              // Google Ads
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16569360111',
+                'custom_parameter': 'time_' + timeLabel
+              });
+            }
+          }, threshold);
+        });
+
+        // Track scroll depth
+        let maxScroll = 0;
+        let scrollThresholds = [25, 50, 75, 90, 100];
+        let scrollsPassed = [];
+
+        function trackScroll() {
+          let scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+          
+          if (scrollPercent > maxScroll) {
+            maxScroll = scrollPercent;
+          }
+
+          scrollThresholds.forEach(function(threshold) {
+            if (scrollPercent >= threshold && !scrollsPassed.includes(threshold)) {
+              scrollsPassed.push(threshold);
+              
+              // Facebook Pixel
+              fbq('trackCustom', 'ScrollDepth', { 
+                scroll_depth: threshold + '%',
+                page_location: window.location.href
+              });
+              
+              // Google Analytics
+              gtag('event', 'scroll', {
+                'scroll_depth': threshold,
+                'event_category': 'engagement',
+                'event_label': threshold + '%'
+              });
+              
+              // Google Ads
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16569360111',
+                'custom_parameter': 'scroll_' + threshold
+              });
+            }
+          });
+        }
+
+        // Throttle scroll events
+        let scrollTimeout;
+        window.addEventListener('scroll', function() {
+          if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+          }
+          scrollTimeout = setTimeout(trackScroll, 100);
+        });
+
+        // Track form interactions
+        function trackFormEvents() {
+          // Track form starts (when user focuses on first input)
+          document.addEventListener('focusin', function(e) {
+            if (e.target.matches('input, textarea, select')) {
+              let form = e.target.closest('form');
+              if (form && !form.dataset.trackingStarted) {
+                form.dataset.trackingStarted = 'true';
+                
+                // Facebook Pixel
+                fbq('track', 'InitiateCheckout');
+                fbq('trackCustom', 'FormStart', {
+                  form_name: form.id || form.className || 'unnamed_form'
+                });
+                
+                // Google Analytics
+                gtag('event', 'form_start', {
+                  'form_id': form.id || 'unnamed_form',
+                  'event_category': 'form_interaction'
+                });
+                
+                // Google Ads
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-16569360111',
+                  'custom_parameter': 'form_start'
+                });
+              }
+            }
+          });
+
+          // Track form submissions
+          document.addEventListener('submit', function(e) {
+            let form = e.target;
+            
+            // Facebook Pixel
+            fbq('track', 'Lead');
+            fbq('track', 'Purchase', {
+              value: 0.00,
+              currency: 'BRL'
+            });
+            fbq('trackCustom', 'FormSubmit', {
+              form_name: form.id || form.className || 'unnamed_form'
+            });
+            
+            // Google Analytics
+            gtag('event', 'form_submit', {
+              'form_id': form.id || 'unnamed_form',
+              'event_category': 'form_interaction'
+            });
+            gtag('event', 'generate_lead', {
+              'currency': 'BRL',
+              'value': 0.00
+            });
+            
+            // Google Ads Conversion
+            gtag('event', 'conversion', {
+              'send_to': 'AW-16569360111/conversion_action',
+              'value': 0.00,
+              'currency': 'BRL'
+            });
+          });
+        }
+
+        trackFormEvents();
+
+        // Track button clicks
+        document.addEventListener('click', function(e) {
+          // Track CTA buttons
+          if (e.target.matches('button, .btn, .cta, [role="button"]')) {
+            let buttonText = e.target.textContent || e.target.value || 'unknown_button';
+            
+            // Facebook Pixel
+            fbq('trackCustom', 'ButtonClick', {
+              button_text: buttonText,
+              button_location: window.location.href
+            });
+            
+            // Google Analytics
+            gtag('event', 'click', {
+              'event_category': 'button',
+              'event_label': buttonText
+            });
+          }
+
+          // Track links
+          if (e.target.matches('a') && e.target.href) {
+            let isExternal = !e.target.href.includes(window.location.hostname);
+            
+            if (isExternal) {
+              // Facebook Pixel
+              fbq('trackCustom', 'ExternalLink', {
+                link_url: e.target.href,
+                link_text: e.target.textContent
+              });
+              
+              // Google Analytics
+              gtag('event', 'click', {
+                'event_category': 'outbound',
+                'event_label': e.target.href
+              });
+            }
+          }
+        });
+
+        // Track video interactions (if videos are present)
+        function trackVideoEvents() {
+          document.querySelectorAll('video').forEach(function(video) {
+            video.addEventListener('play', function() {
+              fbq('trackCustom', 'VideoPlay');
+              gtag('event', 'video_start', {
+                'event_category': 'video',
+                'event_label': video.src || 'embedded_video'
+              });
+            });
+
+            video.addEventListener('pause', function() {
+              fbq('trackCustom', 'VideoPause');
+              gtag('event', 'video_pause', {
+                'event_category': 'video',
+                'event_label': video.src || 'embedded_video'
+              });
+            });
+
+            video.addEventListener('ended', function() {
+              fbq('trackCustom', 'VideoComplete');
+              gtag('event', 'video_complete', {
+                'event_category': 'video',
+                'event_label': video.src || 'embedded_video'
+              });
+            });
+          });
+        }
+
+        // Track YouTube videos (if embedded)
+        if (window.YT) {
+          trackVideoEvents();
+        } else {
+          // Wait for YouTube API to load
+          window.onYouTubeIframeAPIReady = trackVideoEvents;
+        }
+
+        // Track page visibility changes
+        document.addEventListener('visibilitychange', function() {
+          if (document.hidden) {
+            // Facebook Pixel
+            fbq('trackCustom', 'PageHidden', {
+              time_spent: Math.round((Date.now() - startTime) / 1000) + 's'
+            });
+            
+            // Google Analytics
+            gtag('event', 'page_view_end', {
+              'event_category': 'engagement',
+              'custom_parameter': Math.round((Date.now() - startTime) / 1000)
+            });
+          } else {
+            // Page became visible again
+            startTime = Date.now(); // Reset timer
+            
+            // Facebook Pixel
+            fbq('trackCustom', 'PageVisible');
+            
+            // Google Analytics
+            gtag('event', 'page_view_resume', {
+              'event_category': 'engagement'
+            });
+          }
+        });
+
+        // Track errors
+        window.addEventListener('error', function(e) {
+          // Facebook Pixel
+          fbq('trackCustom', 'PageError', {
+            error_message: e.message,
+            error_source: e.filename
+          });
+          
+          // Google Analytics
+          gtag('event', 'exception', {
+            'description': e.message,
+            'fatal': false
+          });
+        });
+
+        // Enhanced ecommerce events for course purchase
+        function trackPurchaseIntent() {
+          // Facebook Pixel
+          fbq('track', 'AddToCart', {
+            value: 497.00,
+            currency: 'BRL',
+            content_name: 'MM LAB Course',
+            content_category: 'Education',
+            content_ids: ['mmlab-course'],
+            content_type: 'product'
+          });
+          
+          // Google Analytics Enhanced Ecommerce
+          gtag('event', 'add_to_cart', {
+            'currency': 'BRL',
+            'value': 497.00,
+            'items': [{
+              'item_id': 'mmlab-course',
+              'item_name': 'MM LAB Course',
+              'item_category': 'Education',
+              'price': 497.00,
+              'quantity': 1
+            }]
+          });
+        }
+
+        // Track purchase completion
+        function trackPurchaseComplete() {
+          // Facebook Pixel
+          fbq('track', 'Purchase', {
+            value: 497.00,
+            currency: 'BRL',
+            content_name: 'MM LAB Course',
+            content_ids: ['mmlab-course'],
+            content_type: 'product'
+          });
+          
+          // Google Analytics Enhanced Ecommerce
+          gtag('event', 'purchase', {
+            'transaction_id': 'mmlab-' + Date.now(),
+            'value': 497.00,
+            'currency': 'BRL',
+            'items': [{
+              'item_id': 'mmlab-course',
+              'item_name': 'MM LAB Course',
+              'item_category': 'Education',
+              'price': 497.00,
+              'quantity': 1
+            }]
+          });
+          
+          // Google Ads Purchase Conversion
+          gtag('event', 'conversion', {
+            'send_to': 'AW-16569360111/purchase',
+            'value': 497.00,
+            'currency': 'BRL',
+            'transaction_id': 'mmlab-' + Date.now()
+          });
+        }
+
+        // Make purchase tracking functions globally available
+        window.trackPurchaseIntent = trackPurchaseIntent;
+        window.trackPurchaseComplete = trackPurchaseComplete;
+
+        // Track page load complete
+        window.addEventListener('load', function() {
+          // Facebook Pixel
+          fbq('trackCustom', 'PageLoadComplete');
+          
+          // Google Analytics
+          gtag('event', 'page_load_complete', {
+            'event_category': 'performance'
+          });
+        });
+
+        // Track device and browser info
+        let deviceInfo = {
+          screen_width: window.screen.width,
+          screen_height: window.screen.height,
+          viewport_width: window.innerWidth,
+          viewport_height: window.innerHeight,
+          user_agent: navigator.userAgent,
+          language: navigator.language
+        };
+
+        // Facebook Pixel
+        fbq('trackCustom', 'DeviceInfo', deviceInfo);
+        
+        // Google Analytics
+        gtag('event', 'device_info', {
+          'event_category': 'user_data',
+          'custom_parameter': JSON.stringify(deviceInfo)
+        });
+
+      });
+    </script>
+
   </body>
 </html>
-
-      <script>
-  window.pixelId = "687fc07e08586211d38614c9";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script>
-
-      <script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
-      
-  <head>
