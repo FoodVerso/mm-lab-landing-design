@@ -448,7 +448,9 @@ const Index = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`relative bg-card border rounded-xl p-5 transition-all ${
+                data-reveal
+                data-delay={String((i % 6) + 1)}
+                className={`relative bg-card border rounded-xl p-5 transition-all hover:-translate-y-1 ${
                   item.bonus
                     ? "border-mm-red shadow-red-glow"
                     : "border-mm-green/30 hover:border-mm-green hover:shadow-green-glow"
