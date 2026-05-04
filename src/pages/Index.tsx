@@ -65,7 +65,12 @@ const Index = () => {
             <img
               src="/lovable-uploads/750e1df2-afde-452b-b3e9-26c460dee47f.png"
               alt="MM LAB Logo"
-              className="w-44 md:w-56 h-auto mx-auto mb-6"
+              width={224}
+              height={80}
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              className="w-28 md:w-36 h-auto mx-auto mb-5"
             />
 
             <div className="inline-flex items-center gap-2 bg-mm-green/10 border border-mm-green/40 rounded-full px-4 py-1 mb-6">
