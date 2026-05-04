@@ -472,10 +472,10 @@ const Index = () => {
           <div className="max-w-4xl mx-auto mt-10 bg-gradient-to-r from-mm-green/10 to-mm-red/10 border border-mm-green/40 rounded-xl p-6 text-center">
             <p className="text-white text-lg">
               Valor total real:{" "}
-              <span className="line-through text-white/50">R$ 1.832</span>
+              <span className="line-through text-white/50">R$ 932</span>
             </p>
             <p className="text-mm-green text-2xl md:text-3xl font-bold mt-1">
-              Hoje, por apenas R$ 197 (ou 12x R$ 20,24)
+              Hoje, por apenas R$ 297 à vista (ou 12x R$ 31,22)
             </p>
           </div>
         </div>
@@ -537,14 +537,14 @@ const Index = () => {
               <CardContent className="p-8 md:p-10 text-center">
                 <p className="text-white/70 text-sm mb-2">De</p>
                 <p className="text-2xl text-white/50 line-through mb-1">
-                  R$ 1.832
+                  R$ 932
                 </p>
                 <p className="text-white/70 text-sm mb-2">por apenas</p>
                 <div className="text-5xl md:text-6xl font-extrabold text-mm-green mb-1">
-                  12x R$20,24
+                  R$ 297 <span className="text-2xl md:text-3xl font-bold">à vista</span>
                 </div>
-                <p className="text-mm-red font-bold mb-4">
-                  ou R$ 197 à vista
+                <p className="text-mm-red font-bold text-xl mb-4">
+                  ou 12x R$ 31,22
                 </p>
                 <p className="text-muted-foreground text-sm mb-6">
                   Acesso vitalício + atualizações grátis
@@ -640,7 +640,7 @@ const Index = () => {
                 {
                   icon: CreditCard,
                   q: "Qual o valor e formas de pagamento?",
-                  a: "R$ 197 à vista ou 12x R$ 20,24 no cartão. Aceitamos PIX, boleto e cartão de crédito.",
+                  a: "R$ 297 à vista ou 12x R$ 31,22 no cartão. Aceitamos PIX, boleto e cartão de crédito.",
                 },
                 {
                   icon: HeadphonesIcon,
@@ -706,7 +706,7 @@ const Index = () => {
             QUERO ENTRAR NO MM LAB →
           </Button>
           <p className="text-white/60 text-sm mt-4">
-            12x R$ 20,24 • Garantia de 7 dias • Acesso vitalício
+            R$ 297 à vista ou 12x R$ 31,22 • Garantia de 7 dias • Acesso vitalício
           </p>
         </div>
       </section>
