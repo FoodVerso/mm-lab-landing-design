@@ -37,7 +37,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-2 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-xs md:text-sm text-white">
             <Flame className="h-4 w-4 text-mm-red" />
-            <span className="hidden sm:inline">Lote promocional ativo —</span>
+            <span className="hidden sm:inline">Lote promocional ativo </span>
             <span className="font-bold text-mm-green">12x R$20,24</span>
           </div>
           <Button
@@ -78,7 +78,7 @@ const Index = () => {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-[1.1]">
               Como{" "}
               <span className="text-mm-green">dobrar o faturamento</span> da sua
-              cozinha — sem abrir nova loja, sem contratar mais ninguém e usando
+              cozinha sem abrir nova loja, sem contratar mais ninguém e usando
               a mesma estrutura que você já tem.
             </h1>
 
@@ -168,7 +168,7 @@ const Index = () => {
               <strong className="text-mm-green">
                 várias marcas de delivery operando dentro da mesma cozinha
               </strong>{" "}
-              — usando a mesma equipe, o mesmo aluguel e os mesmos
+              usando a mesma equipe, o mesmo aluguel e os mesmos
               equipamentos. Mais pedidos, mais marcas no iFood, custo fixo igual.
             </p>
           </div>
@@ -193,7 +193,7 @@ const Index = () => {
                   Domine novos nichos
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Açaí, hambúrguer, marmita, japonês — várias marcas
+                  Açaí, hambúrguer, marmita, japonês várias marcas
                   diferentes saindo da mesma cozinha.
                 </p>
               </CardContent>
@@ -222,7 +222,7 @@ const Index = () => {
               Resultados reais de quem aplicou
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Prints reais de alunos. Sem promessa milagrosa — só execução.
+              Prints reais de alunos. Sem promessa milagrosa só execução.
             </p>
           </div>
 
@@ -262,7 +262,7 @@ const Index = () => {
                   className="w-full h-auto rounded-lg mb-3 border border-mm-green/30"
                 />
                 <p className="text-white text-sm font-semibold text-center">
-                  ⭐ 3 lojas dentro da mesma cozinha — 30 dias só no iFood
+                  ⭐ 3 lojas dentro da mesma cozinha 30 dias só no iFood
                 </p>
               </CardContent>
             </Card>
@@ -301,7 +301,7 @@ const Index = () => {
                 Quem vai te ensinar
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">
-                William Flores — o cara por trás do método
+                William Flores o cara por trás do método
               </h2>
               <p className="text-white/85 leading-relaxed mb-4">
                 Empresário do delivery, criador do método Multimarcas e
@@ -343,32 +343,32 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
               {
-                titulo: "MÓDULO 1 — Conceito Multimarcas",
+                titulo: "MÓDULO 1 Conceito Multimarcas",
                 desc: "Como pensar, criar e validar marcas que vendem dentro da mesma cozinha.",
                 valor: "R$ 297",
               },
               {
-                titulo: "MÓDULO 2 — Contabilidade Inteligente",
+                titulo: "MÓDULO 2 Contabilidade Inteligente",
                 desc: "Como organizar o financeiro com várias marcas operando ao mesmo tempo.",
                 valor: "R$ 197",
               },
               {
-                titulo: "MÓDULO 3 — Sistemas e Ferramentas",
+                titulo: "MÓDULO 3 Sistemas e Ferramentas",
                 desc: "Stack completo de apps, integrações e gestão para operar no automático.",
                 valor: "R$ 247",
               },
               {
-                titulo: "MÓDULO 4 — Vendas Multimarcas",
+                titulo: "MÓDULO 4 Vendas Multimarcas",
                 desc: "Estratégias de iFood, Rappi e 99Food para subir no ranking e vender mais.",
                 valor: "R$ 397",
               },
               {
-                titulo: "MÓDULO 5 — Operação e Escala",
+                titulo: "MÓDULO 5 Operação e Escala",
                 desc: "Como manter a qualidade quando os pedidos triplicam.",
                 valor: "R$ 297",
               },
               {
-                titulo: "BÔNUS — Módulo Extra + Atualizações",
+                titulo: "BÔNUS Módulo Extra + Atualizações",
                 desc: "Conteúdos novos liberados sem custo + suporte via WhatsApp.",
                 valor: "R$ 397",
                 bonus: true,
@@ -460,7 +460,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
             <span className="bg-mm-red text-white px-4 py-1 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider">
-              Lote promocional — últimas vagas
+              Lote promocional últimas vagas
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-white mt-4">
               Comece <span className="text-mm-green">hoje mesmo</span>
@@ -630,7 +630,7 @@ const Index = () => {
           </h2>
           <p className="text-lg text-white/85 mb-8">
             Você tem duas opções: continuar fazendo o mesmo e esperando outro
-            resultado — ou aplicar o método que já está mudando a cozinha de
+            resultado ou aplicar o método que já está mudando a cozinha de
             centenas de donos de restaurante pelo Brasil.
           </p>
           <Button
