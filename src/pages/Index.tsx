@@ -167,6 +167,8 @@ const Index = () => {
               return (
                 <div
                   key={i}
+                  data-reveal
+                  data-delay={String((i % 6) + 1)}
                   className="group relative bg-card border border-mm-green/20 rounded-2xl p-5 hover:border-mm-green hover:-translate-y-1 hover:shadow-green-glow transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-xl bg-mm-green/10 border border-mm-green/30 flex items-center justify-center mb-4 group-hover:bg-mm-green/20 transition-colors">
@@ -204,6 +206,8 @@ const Index = () => {
             ].map((dor, i) => (
               <div
                 key={i}
+                data-reveal
+                data-delay={String((i % 6) + 1)}
                 className="flex items-start gap-3 bg-card border border-mm-red/20 rounded-lg p-4"
               >
                 <XCircle className="h-5 w-5 text-mm-red flex-shrink-0 mt-0.5" />
