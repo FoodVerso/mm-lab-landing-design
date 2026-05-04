@@ -32,24 +32,6 @@ const goCheckout = () => window.open(CHECKOUT_URL, "_blank");
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-inter">
-      {/* ============ STICKY TOP BAR (urgência + CTA persistente) ============ */}
-      <div className="sticky top-0 z-50 bg-mm-black/95 backdrop-blur border-b border-mm-green/30">
-        <div className="container mx-auto px-4 py-2 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-xs md:text-sm text-white">
-            <Flame className="h-4 w-4 text-mm-red" />
-            <span className="hidden sm:inline">Lote promocional ativo </span>
-            <span className="font-bold text-mm-green">12x R$20,24</span>
-          </div>
-          <Button
-            variant="cta-large"
-            size="sm"
-            className="text-xs md:text-sm px-4 py-2"
-            onClick={goCheckout}
-          >
-            Quero entrar agora
-          </Button>
-        </div>
-      </div>
 
       {/* ============ 1. HERO – Hook + Promessa + CTA acima da dobra ============ */}
       <section className="relative py-12 md:py-20 bg-gradient-hero overflow-hidden">
