@@ -234,7 +234,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all">
               <CardContent className="p-4">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/lovable-uploads/af32416f-fd39-4027-999c-5dce6c4b9b04.png"
                   alt="Resultado financeiro iFood"
                   className="w-full h-auto rounded-lg mb-3"
@@ -247,7 +247,7 @@ const Index = () => {
 
             <Card className="bg-card border-mm-green/20 hover:border-mm-green hover:shadow-green-glow transition-all">
               <CardContent className="p-4">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/lovable-uploads/eef31798-8226-4275-8b3d-8a3e23249200.png"
                   alt="Açaiteca - aluno Daniel"
                   className="w-full h-auto rounded-lg mb-3"
@@ -261,7 +261,7 @@ const Index = () => {
 
             <Card className="bg-card border-mm-green/40 shadow-green-glow">
               <CardContent className="p-4">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/lovable-uploads/1a6fcfd7-2916-4517-bf76-f0e112845dc8.png"
                   alt="Will The Burguer - 3 lojas"
                   className="w-full h-auto rounded-lg mb-3 border border-mm-green/30"
@@ -292,7 +292,7 @@ const Index = () => {
               <div className="relative">
                 <div className="absolute -inset-6 bg-mm-green/20 blur-3xl rounded-full" />
                 <div className="relative p-2 bg-gradient-to-br from-mm-green/10 to-mm-red/10 rounded-2xl border border-mm-green/30 shadow-green-glow">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/lovable-uploads/b07bc6f2-f3ce-4050-a7c7-2db37f5fcd32.png"
                     alt="William Flores"
                     className="w-72 md:w-80 h-auto object-contain rounded-xl"
@@ -656,7 +656,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <img
+              <img loading="lazy" decoding="async"
                 src="/lovable-uploads/ba4e96ab-3b18-4553-a6ac-ccd37bf3ccd0.png"
                 alt="MM LAB"
                 className="h-16 w-auto mb-4"
