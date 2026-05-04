@@ -129,3 +129,66 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* ===== Hero ambient animations (inspired by Gestor IA layout) ===== */
+@layer utilities {
+  .hero-aurora {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .hero-aurora::before,
+  .hero-aurora::after {
+    content: "";
+    position: absolute;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.55;
+    animation: aurora-float 14s ease-in-out infinite;
+  }
+  .hero-aurora::before {
+    background: radial-gradient(circle, hsl(var(--mm-green) / 0.55), transparent 60%);
+    top: -20%;
+    left: -15%;
+  }
+  .hero-aurora::after {
+    background: radial-gradient(circle, hsl(var(--mm-red) / 0.45), transparent 60%);
+    bottom: -25%;
+    right: -15%;
+    animation-delay: -7s;
+  }
+  @keyframes aurora-float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(4%, -4%) scale(1.08); }
+  }
+
+  .grid-fade {
+    background-image:
+      linear-gradient(hsl(var(--mm-green) / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--mm-green) / 0.08) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+
+  .marquee {
+    display: flex;
+    gap: 3rem;
+    animation: marquee 30s linear infinite;
+    width: max-content;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .float-icon {
+    animation: float-y 6s ease-in-out infinite;
+  }
+  @keyframes float-y {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+}
