@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useReveal } from "@/hooks/use-reveal";
 import {
   ChefHat,
   Rocket,
@@ -36,6 +37,7 @@ const CHECKOUT_URL = "https://produtos.foguetewill.com.br/pay/mmlab";
 const goCheckout = () => window.open(CHECKOUT_URL, "_blank");
 
 const Index = () => {
+  useReveal();
   return (
     <div className="min-h-screen bg-background text-foreground font-inter">
 
@@ -70,17 +72,18 @@ const Index = () => {
               loading="eager"
               decoding="async"
               fetchPriority="high"
+              data-reveal="zoom"
               className="w-24 md:w-32 h-auto mx-auto mb-5 drop-shadow-[0_0_25px_hsl(var(--mm-green)/0.5)]"
             />
 
-            <div className="inline-flex items-center gap-2 bg-mm-green/10 border border-mm-green/40 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
+            <div data-reveal data-delay="1" className="inline-flex items-center gap-2 bg-mm-green/10 border border-mm-green/40 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
               <Flame className="h-4 w-4 text-mm-green" />
               <span className="text-[11px] md:text-sm text-mm-green font-semibold uppercase tracking-wider">
                 Para donos de restaurante e delivery
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-[1.1] tracking-tight">
+            <h1 data-reveal data-delay="2" className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-[1.1] tracking-tight">
               Como{" "}
               <span className="bg-gradient-mixed bg-clip-text text-transparent">
                 dobrar o faturamento
@@ -88,17 +91,17 @@ const Index = () => {
               da sua cozinha sem abrir nova loja, sem contratar mais ninguém e usando a mesma estrutura que você já tem.
             </h1>
 
-            <p className="text-base md:text-xl text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p data-reveal data-delay="3" className="text-base md:text-xl text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
               O método <strong className="text-white">Multimarcas</strong> que já
               colocou alunos com 3 marcas dentro da mesma cozinha vendendo no
               iFood em menos de 30 dias.
             </p>
 
-            <div className="flex flex-col items-center gap-4">
+            <div data-reveal data-delay="4" className="flex flex-col items-center gap-4">
               <Button
                 variant="cta-large"
                 size="lg"
-                className="text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-green-glow rounded-full"
+                className="text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-green-glow rounded-full cta-pulse"
                 onClick={goCheckout}
               >
                 QUERO ESCALAR MINHA COZINHA →
@@ -164,6 +167,8 @@ const Index = () => {
               return (
                 <div
                   key={i}
+                  data-reveal
+                  data-delay={String((i % 6) + 1)}
                   className="group relative bg-card border border-mm-green/20 rounded-2xl p-5 hover:border-mm-green hover:-translate-y-1 hover:shadow-green-glow transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-xl bg-mm-green/10 border border-mm-green/30 flex items-center justify-center mb-4 group-hover:bg-mm-green/20 transition-colors">
@@ -201,6 +206,8 @@ const Index = () => {
             ].map((dor, i) => (
               <div
                 key={i}
+                data-reveal
+                data-delay={String((i % 6) + 1)}
                 className="flex items-start gap-3 bg-card border border-mm-red/20 rounded-lg p-4"
               >
                 <XCircle className="h-5 w-5 text-mm-red flex-shrink-0 mt-0.5" />
@@ -441,7 +448,9 @@ const Index = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className={`relative bg-card border rounded-xl p-5 transition-all ${
+                data-reveal
+                data-delay={String((i % 6) + 1)}
+                className={`relative bg-card border rounded-xl p-5 transition-all hover:-translate-y-1 ${
                   item.bonus
                     ? "border-mm-red shadow-red-glow"
                     : "border-mm-green/30 hover:border-mm-green hover:shadow-green-glow"
