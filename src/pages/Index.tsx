@@ -72,17 +72,18 @@ const Index = () => {
               loading="eager"
               decoding="async"
               fetchPriority="high"
+              data-reveal="zoom"
               className="w-24 md:w-32 h-auto mx-auto mb-5 drop-shadow-[0_0_25px_hsl(var(--mm-green)/0.5)]"
             />
 
-            <div className="inline-flex items-center gap-2 bg-mm-green/10 border border-mm-green/40 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
+            <div data-reveal data-delay="1" className="inline-flex items-center gap-2 bg-mm-green/10 border border-mm-green/40 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
               <Flame className="h-4 w-4 text-mm-green" />
               <span className="text-[11px] md:text-sm text-mm-green font-semibold uppercase tracking-wider">
                 Para donos de restaurante e delivery
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-[1.1] tracking-tight">
+            <h1 data-reveal data-delay="2" className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-[1.1] tracking-tight">
               Como{" "}
               <span className="bg-gradient-mixed bg-clip-text text-transparent">
                 dobrar o faturamento
@@ -90,17 +91,17 @@ const Index = () => {
               da sua cozinha sem abrir nova loja, sem contratar mais ninguém e usando a mesma estrutura que você já tem.
             </h1>
 
-            <p className="text-base md:text-xl text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p data-reveal data-delay="3" className="text-base md:text-xl text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
               O método <strong className="text-white">Multimarcas</strong> que já
               colocou alunos com 3 marcas dentro da mesma cozinha vendendo no
               iFood em menos de 30 dias.
             </p>
 
-            <div className="flex flex-col items-center gap-4">
+            <div data-reveal data-delay="4" className="flex flex-col items-center gap-4">
               <Button
                 variant="cta-large"
                 size="lg"
-                className="text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-green-glow rounded-full"
+                className="text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-green-glow rounded-full cta-pulse"
                 onClick={goCheckout}
               >
                 QUERO ESCALAR MINHA COZINHA →
