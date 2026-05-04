@@ -39,13 +39,25 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-inter">
 
-      {/* ============ 1. HERO – Hook + Promessa + CTA acima da dobra ============ */}
-      <section className="relative py-12 md:py-20 bg-gradient-hero overflow-hidden">
-        <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute top-10 left-10 w-40 h-24 border border-mm-green/30 rounded" />
-          <div className="absolute bottom-10 right-10 w-32 h-20 border border-mm-red/30 rounded" />
-          <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-mm-green rounded-full animate-pulse" />
-          <div className="absolute bottom-1/3 right-1/4 w-2 h-2 bg-mm-red rounded-full animate-pulse" />
+      {/* ============ 1. HERO – estilo Gestor IA: aurora + grid + selos ============ */}
+      <section className="relative pt-12 pb-10 md:pt-20 md:pb-16 overflow-hidden bg-mm-black">
+        {/* Camadas de fundo */}
+        <div className="hero-aurora" />
+        <div className="absolute inset-0 grid-fade pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-mm-black pointer-events-none" />
+
+        {/* Ícones flutuantes decorativos (estilo apps em torno) */}
+        <div className="absolute top-16 left-[8%] hidden md:flex w-12 h-12 rounded-xl bg-mm-green/15 border border-mm-green/40 items-center justify-center float-icon shadow-green-glow">
+          <Utensils className="h-5 w-5 text-mm-green" />
+        </div>
+        <div className="absolute top-32 right-[10%] hidden md:flex w-12 h-12 rounded-xl bg-mm-red/15 border border-mm-red/40 items-center justify-center float-icon shadow-red-glow" style={{ animationDelay: "-2s" }}>
+          <Bike className="h-5 w-5 text-mm-red" />
+        </div>
+        <div className="absolute bottom-20 left-[12%] hidden md:flex w-12 h-12 rounded-xl bg-mm-green/15 border border-mm-green/40 items-center justify-center float-icon" style={{ animationDelay: "-4s" }}>
+          <Store className="h-5 w-5 text-mm-green" />
+        </div>
+        <div className="absolute bottom-28 right-[14%] hidden md:flex w-12 h-12 rounded-xl bg-mm-green/15 border border-mm-green/40 items-center justify-center float-icon" style={{ animationDelay: "-1s" }}>
+          <DollarSign className="h-5 w-5 text-mm-green" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -58,21 +70,22 @@ const Index = () => {
               loading="eager"
               decoding="async"
               fetchPriority="high"
-              className="w-28 md:w-36 h-auto mx-auto mb-5"
+              className="w-24 md:w-32 h-auto mx-auto mb-5 drop-shadow-[0_0_25px_hsl(var(--mm-green)/0.5)]"
             />
 
-            <div className="inline-flex items-center gap-2 bg-mm-green/10 border border-mm-green/40 rounded-full px-4 py-1 mb-6">
+            <div className="inline-flex items-center gap-2 bg-mm-green/10 border border-mm-green/40 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
               <Flame className="h-4 w-4 text-mm-green" />
-              <span className="text-xs md:text-sm text-mm-green font-semibold uppercase tracking-wider">
+              <span className="text-[11px] md:text-sm text-mm-green font-semibold uppercase tracking-wider">
                 Para donos de restaurante e delivery
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-[1.1]">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white leading-[1.1] tracking-tight">
               Como{" "}
-              <span className="text-mm-green">dobrar o faturamento</span> da sua
-              cozinha sem abrir nova loja, sem contratar mais ninguém e usando
-              a mesma estrutura que você já tem.
+              <span className="bg-gradient-mixed bg-clip-text text-transparent">
+                dobrar o faturamento
+              </span>{" "}
+              da sua cozinha sem abrir nova loja, sem contratar mais ninguém e usando a mesma estrutura que você já tem.
             </h1>
 
             <p className="text-base md:text-xl text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -81,27 +94,86 @@ const Index = () => {
               iFood em menos de 30 dias.
             </p>
 
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-4">
               <Button
                 variant="cta-large"
                 size="lg"
-                className="text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-green-glow"
+                className="text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-green-glow rounded-full"
                 onClick={goCheckout}
               >
                 QUERO ESCALAR MINHA COZINHA →
               </Button>
-              <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-white/70">
-                <span className="flex items-center gap-1">
+              <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs md:text-sm text-white/70">
+                <span className="flex items-center gap-1.5">
                   <ShieldCheck className="h-4 w-4 text-mm-green" /> Garantia 7 dias
                 </span>
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1.5">
                   <Lock className="h-4 w-4 text-mm-green" /> Acesso vitalício
                 </span>
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1.5">
                   <CreditCard className="h-4 w-4 text-mm-green" /> 12x no cartão
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ 1.5 SELOS / CREDIBILIDADE (marquee) ============ */}
+      <section className="py-8 bg-mm-black border-y border-mm-green/15 overflow-hidden">
+        <p className="text-center text-xs uppercase tracking-[0.25em] text-white/40 mb-5">
+          Validado nos principais marketplaces de delivery
+        </p>
+        <div className="relative">
+          <div className="marquee">
+            {[...Array(2)].flatMap((_, loop) =>
+              ["iFood", "Rappi", "99Food", "Uber Eats", "WhatsApp", "Anota AI", "Goomer"].map((nome, i) => (
+                <div
+                  key={`${loop}-${i}`}
+                  className="flex items-center gap-2 px-6 py-2 rounded-lg border border-mm-green/20 bg-card/50 backdrop-blur-sm whitespace-nowrap"
+                >
+                  <div className="w-2 h-2 rounded-full bg-mm-green animate-pulse" />
+                  <span className="text-white/70 font-semibold text-sm md:text-base">{nome}</span>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ 1.6 PARA QUEM É ============ */}
+      <section className="py-14 md:py-20 bg-mm-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-mm-green font-bold text-xs md:text-sm uppercase tracking-[0.2em]">
+              Esse método é pra você se
+            </span>
+            <h2 className="text-2xl md:text-4xl font-bold text-white mt-3">
+              Você se identifica com pelo menos um destes perfis
+            </h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            {[
+              { icon: ChefHat, title: "Dono de restaurante", desc: "Quer escalar sem abrir nova loja física." },
+              { icon: Bike, title: "Operador de delivery", desc: "Vive do iFood e quer mais marcas vendendo." },
+              { icon: Users, title: "Dark kitchen", desc: "Tem cozinha pronta e quer multiplicar marcas." },
+              { icon: Zap, title: "Empreendedor food", desc: "Vai abrir agora e quer começar certo." },
+            ].map((p, i) => {
+              const Icon = p.icon;
+              return (
+                <div
+                  key={i}
+                  className="group relative bg-card border border-mm-green/20 rounded-2xl p-5 hover:border-mm-green hover:-translate-y-1 hover:shadow-green-glow transition-all duration-300"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-mm-green/10 border border-mm-green/30 flex items-center justify-center mb-4 group-hover:bg-mm-green/20 transition-colors">
+                    <Icon className="h-6 w-6 text-mm-green" />
+                  </div>
+                  <h3 className="text-white font-bold text-base md:text-lg mb-1">{p.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
