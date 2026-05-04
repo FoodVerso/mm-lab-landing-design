@@ -88,7 +88,7 @@ const Index = () => {
               <span className="bg-gradient-mixed bg-clip-text text-transparent">
                 dobrar o faturamento
               </span>{" "}
-              da sua cozinha sem abrir nova loja, sem contratar mais ninguém e usando a mesma estrutura que você já tem.
+              da sua cozinha sem abrir uma nova loja física, usando a mesma estrutura que você já tem.
             </h1>
 
             <p data-reveal data-delay="3" className="text-base md:text-xl text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
