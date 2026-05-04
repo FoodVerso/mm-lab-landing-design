@@ -23,6 +23,12 @@ import {
   Instagram,
   MessageCircle,
   Youtube,
+  Utensils,
+  Bike,
+  Store,
+  Users,
+  DollarSign,
+  Zap,
 } from "lucide-react";
 
 const CHECKOUT_URL = "https://produtos.foguetewill.com.br/pay/mmlab";
