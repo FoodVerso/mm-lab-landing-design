@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useReveal } from "@/hooks/use-reveal";
 import {
   ChefHat,
   Rocket,
@@ -36,6 +37,7 @@ const CHECKOUT_URL = "https://produtos.foguetewill.com.br/pay/mmlab";
 const goCheckout = () => window.open(CHECKOUT_URL, "_blank");
 
 const Index = () => {
+  useReveal();
   return (
     <div className="min-h-screen bg-background text-foreground font-inter">
 
